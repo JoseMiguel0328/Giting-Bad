@@ -54,16 +54,16 @@ def crearMascota():
     if (documentoDueno in duenos):
         print("\nEl dueño ya se encuentra registrado en nuesta base de datos, se usará su información.")
         d = duenos[documentoDueno] #Si, si se encuentra registrado, creamos un objeto con su información.
+    else:
+        print("\nRegistrando un nuevo dueño a la base de datos...")
+        
+        nombreDueno = input("\nNombre del dueño: ")
+        telefonoDueno = input("\nTeléfono: ")
+        direccionDueno = input("\nDirección: ")
     
-    print("\nRegistrando un nuevo dueño a la base de datos...")
+        #Se crean ambos objetos con la información suministrada
+        d = dueno(nombreDueno, telefonoDueno, direccionDueno, documentoDueno) 
     
-    
-    nombreDueno = input("\nNombre del dueño: ")
-    telefonoDueno = input("\nTeléfono: ")
-    direccionDueno = input("\nDirección: ")
-    
-    #Se crean ambos objetos con la información suministrada
-    d = dueno(nombreDueno, telefonoDueno, direccionDueno, documentoDueno) 
     m = mascota(nombreMascota, especieMascota, razaMascota, edadMascota, d)
 
     duenos[documentoDueno] = {'dueno': d} #Se agrega información al diccionario del dueño
