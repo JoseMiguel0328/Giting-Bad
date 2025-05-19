@@ -29,6 +29,7 @@ class Consulta():
         #6
         except Exception as e:
             logger.error(f"Ha ocurrido un error al registrar la consulta: {e}")
+            raise
 
     def _validar_cadena(self, argumento):
         """
@@ -41,7 +42,7 @@ class Consulta():
         if (not argumento_normalizado or argumento_normalizado.isspace()):
             raise ValueError("El argumento no puede estar vacío.")
         return argumento_normalizado
-   
+
     def _validar_fecha(self, fecha):
         """
         1. Intenta convertir el texto recibido a un objeto datetime con formato día/mes/año.
@@ -53,6 +54,7 @@ class Consulta():
             return fecha_normalizada
         except ValueError as e:
             logger.error(f"Fecha inválida ingresada: '{fecha}' -> {e}")
+            raise ValueError(f"Formato de fecha inválido. Use dd/mm/aaaa.")
 
     def __str__(self):
         """

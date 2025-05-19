@@ -56,3 +56,40 @@
 2025-05-18 21:04:15,206 - ERROR - clinica_veterinaria - Fecha invalida ingresada: '' -> time data '' does not match format '%d/%m/%Y'
 2025-05-18 21:04:15,206 - ERROR - clinica_veterinaria - Ha ocurrido un error al registrar la consulta: El argumento no puede estar vacio.
 2025-05-18 21:04:21,447 - ERROR - clinica_veterinaria - Error al mostrar historial: 'Consulta' object has no attribute 'mascota'
+2025-05-19 14:49:35,208 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Parcerote
+2025-05-19 14:49:35,212 - INFO - clinica_veterinaria - La mascota Parcerito se ha creado exitosamente.
+2025-05-19 14:50:25,697 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-19 14:51:11,560 - ERROR - clinica_veterinaria - Fecha inválida ingresada: '' -> time data '' does not match format '%d/%m/%Y'
+2025-05-19 14:51:11,561 - ERROR - clinica_veterinaria - Ha ocurrido un error al registrar la consulta: El argumento no puede estar vacío.
+2025-05-19 14:51:25,713 - ERROR - clinica_veterinaria - Error al mostrar historial: 'Consulta' object has no attribute 'mascota'
+2025-05-19 14:53:08,307 - CRITICAL - clinica_veterinaria - Ha ocurrido un error fatal en el menu.
+2025-05-19 14:54:35,244 - ERROR - clinica_veterinaria - Ha ocurrido el siguiente error al registrar el dueno: El argumento no puede estar vacío.
+2025-05-19 14:54:35,244 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: El argumento no puede estar vacío.
+2025-05-19 14:55:39,231 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Parcero
+2025-05-19 14:55:39,232 - INFO - clinica_veterinaria - La mascota Parcerito se ha creado exitosamente.
+2025-05-19 14:56:09,257 - ERROR - clinica_veterinaria - Fecha inválida ingresada: '01/187/1' -> time data '01/187/1' does not match format '%d/%m/%Y'
+2025-05-19 14:56:09,257 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-19 14:57:08,028 - CRITICAL - clinica_veterinaria - Ha ocurrido un error fatal en el menu.
+2025-05-19 14:57:46,513 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Parcero
+2025-05-19 14:57:46,514 - INFO - clinica_veterinaria - La mascota Parcerito se ha creado exitosamente.
+2025-05-19 14:57:57,305 - WARNING - clinica_veterinaria - Cuidado, intento de buscar mascota Parcerit sin nombre registrado.
+2025-05-19 14:58:14,555 - ERROR - clinica_veterinaria - Fecha inválida ingresada: '01/187/1' -> time data '01/187/1' does not match format '%d/%m/%Y'
+2025-05-19 14:58:14,555 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-19 14:59:53,079 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-19 15:02:01,457 - ERROR - clinica_veterinaria - Fecha inválida ingresada: '' -> time data '' does not match format '%d/%m/%Y'
+2025-05-19 15:02:01,457 - ERROR - clinica_veterinaria - Ha ocurrido un error al registrar la consulta: El argumento no puede estar vacío.
+2025-05-19 15:02:37,041 - ERROR - clinica_veterinaria - Error al mostrar historial: 'Consulta' object has no attribute 'mascota'
+2025-05-19 15:04:11,148 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Parcero
+2025-05-19 15:04:11,148 - INFO - clinica_veterinaria - La mascota Parcerito se ha creado exitosamente.
+2025-05-19 15:04:29,573 - ERROR - clinica_veterinaria - Ha ocurrido un error al registrar la consulta: El argumento no puede estar vacío.
+2025-05-19 15:04:39,893 - ERROR - clinica_veterinaria - Error al mostrar historial: 'Consulta' object has no attribute 'mascota'
+2025-05-19 15:05:23,000 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Parcero
+2025-05-19 15:05:23,000 - INFO - clinica_veterinaria - La mascota Parcerito se ha creado exitosamente.
+2025-05-19 15:05:43,122 - ERROR - clinica_veterinaria - Ha ocurrido un error al registrar la consulta: El argumento no puede estar vacío.
+2025-05-19 15:05:49,639 - ERROR - clinica_veterinaria - Error al mostrar historial: 'Consulta' object has no attribute 'mascota'
+2025-05-19 15:31:10,389 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Parcero
+2025-05-19 15:31:10,389 - INFO - clinica_veterinaria - La mascota Parcerito se ha creado exitosamente.
+2025-05-19 15:31:24,196 - ERROR - clinica_veterinaria - Fecha inválida ingresada: '' -> time data '' does not match format '%d/%m/%Y'
+2025-05-19 15:31:24,196 - ERROR - clinica_veterinaria - Ha ocurrido un error al registrar la consulta: Formato de fecha inválido. Use dd/mm/aaaa.
+2025-05-19 15:31:24,196 - ERROR - clinica_veterinaria - Error al registrar consulta: Formato de fecha inválido. Use dd/mm/aaaa.
+2025-05-19 15:31:48,208 - WARNING - clinica_veterinaria - Mascota Parcerito sin historial registrado.

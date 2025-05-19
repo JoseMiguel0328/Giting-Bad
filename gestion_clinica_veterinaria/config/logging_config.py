@@ -7,7 +7,6 @@ Este módulo configura el sistema de logging (registro de eventos) para toda la 
 3. Establece un logger principal llamado 'clinica_veterinaria'.
 4. Define el formato de los mensajes de log.
 5. Crea un handler que escribe los logs en el archivo.
-6. 
 """
 
 import logging

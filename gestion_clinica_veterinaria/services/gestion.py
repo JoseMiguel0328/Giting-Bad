@@ -81,24 +81,27 @@ def crear_consulta(mascotas, consultas):
     """
     try:
         # 1
-        nombre_mascota = input("Nombre de la mascota: ")
+        nombre_mascota = input("Nombre de la mascota: ").strip().capitalize()
         # 2
         if nombre_mascota not in mascotas:
             print(f"\nNo se encontró una mascota registrada con el nombre {nombre_mascota}.")
             logger.warning(f"Cuidado, intento de buscar mascota {nombre_mascota} sin nombre registrado.")
             return
-        
-        # 3
-        fecha = input("Fecha (dd/mm/aaaa): ")
-        motivo = input("Motivo de la visita: ")
-        diagnostico = input("¿Qué síntomas tiene?: ")
-        consulta = Consulta(fecha, motivo, diagnostico, mascotas[nombre_mascota])
-        # 4
-        consultas.append(consulta)
+        else:
+            # 3
+            fecha = input("Fecha (dd/mm/aaaa): ")
+            motivo = input("Motivo de la visita: ")
+            diagnostico = input("¿Qué síntomas tiene?: ")
+
+            consulta = Consulta(fecha, motivo, diagnostico, mascotas[nombre_mascota])
+            consultas.append(consulta)
+
+        # 4        
         print(f"Consulta registrada correctamente para {nombre_mascota} ✓")
     except Exception as e:
         # 6
         logger.error(f"Error al registrar consulta: {e}")
+        print("Ha ocurrido un error registrando una nueva consulta, porfavor verifique la información.")
 
 # C
 def listar_mascotas(mascotas):
@@ -162,6 +165,7 @@ def mostrar_historial(mascotas, consultas):
     except Exception as e:
         # 6
         logger.error(f"Error al mostrar historial: {e}")
+        print(f"Estamos teniendo problemas al listar el historial de {nombre_mascota}, sentimos los inconvenientes.")
 
 # E
 def menu():

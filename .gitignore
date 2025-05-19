@@ -1,0 +1,2 @@
+#Ignoramos _pycache_ para un commit más limpio
+_pycache_/
