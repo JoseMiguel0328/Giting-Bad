@@ -1,0 +1,58 @@
+2025-05-18 20:02:06,837 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Parcerote
+2025-05-18 20:02:06,838 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando unna nueva mascota o dueño: 'str' object has no attribute 'str'
+2025-05-18 20:06:42,718 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Parcerote
+2025-05-18 20:06:42,720 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: 'bool' object has no attribute 'isdigit'
+2025-05-18 20:08:46,343 - ERROR - clinica_veterinaria - Ha ocurrido el siguiente error al registrar el dueño: Número de teléfono inválido
+2025-05-18 20:08:46,345 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: Número de teléfono inválido
+2025-05-18 20:09:24,321 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño B
+2025-05-18 20:09:24,321 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: 'bool' object has no attribute 'isdigit'
+2025-05-18 20:11:30,546 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño B
+2025-05-18 20:14:09,668 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño B
+2025-05-18 20:14:09,669 - INFO - clinica_veterinaria - La mascota {self.nombre} se ha creado exitosamente.
+2025-05-18 20:15:21,921 - ERROR - clinica_veterinaria - Ha ocurrido el siguiente error al registrar el dueño: Número de teléfono inválido
+2025-05-18 20:15:21,922 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: Número de teléfono inválido
+2025-05-18 20:18:23,424 - ERROR - clinica_veterinaria - Ha ocurrido el siguiente error al registrar el dueno: Numero de telefono invalido
+2025-05-18 20:18:23,427 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: Numero de telefono invalido
+2025-05-18 20:22:29,137 - ERROR - clinica_veterinaria - Ha ocurrido un error en el menú, vuelva a intentar.
+2025-05-18 20:26:02,844 - ERROR - clinica_veterinaria - Ha ocurrido un error en el menu, vuelva a intentar.
+2025-05-18 20:26:02,845 - INFO - clinica_veterinaria - Se vuelve a iniciar el menu.
+2025-05-18 20:28:45,176 - CRITICAL - clinica_veterinaria - Ha ocurrido un error en el menu, vuelva a intentar.
+2025-05-18 20:29:21,298 - ERROR - clinica_veterinaria - Ha ocurrido el siguiente error al registrar el dueno: El argumento no puede estar vacio.
+2025-05-18 20:29:21,298 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: El argumento no puede estar vacio.
+2025-05-18 20:30:36,654 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño A
+2025-05-18 20:30:36,655 - ERROR - clinica_veterinaria - Ha ocurrido un error creaando la mascota: El argumento no puede estar vacio.
+2025-05-18 20:30:36,655 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: El argumento no puede estar vacio.
+2025-05-18 20:33:23,663 - CRITICAL - clinica_veterinaria - Ha ocurrido un error fatal en el menu.
+2025-05-18 20:36:21,921 - CRITICAL - clinica_veterinaria - Ha ocurrido un error fatal en el menu.
+2025-05-18 20:37:01,325 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Parcerote
+2025-05-18 20:37:01,325 - INFO - clinica_veterinaria - La mascota Parcerito se ha creado exitosamente.
+2025-05-18 20:37:09,609 - INFO - clinica_veterinaria - Mascotas listadas con exito.
+2025-05-18 20:37:43,267 - WARNING - clinica_veterinaria - Cuidado, intento de buscar mascota parcerito sin nombre registrado
+2025-05-18 20:38:40,385 - CRITICAL - clinica_veterinaria - Ha ocurrido un error fatal en el menu.
+2025-05-18 20:39:22,157 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Parcerote
+2025-05-18 20:39:22,157 - INFO - clinica_veterinaria - La mascota Parcerito se ha creado exitosamente.
+2025-05-18 20:39:49,038 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-18 20:40:31,899 - ERROR - clinica_veterinaria - Fecha invalida ingresada: '12' -> time data '12' does not match format '%d/%m/%Y'
+2025-05-18 20:40:31,899 - ERROR - clinica_veterinaria - Ha ocurrido un error al registrar la consulta: El argumento no puede estar vacio.
+2025-05-18 20:42:27,820 - WARNING - clinica_veterinaria - Error al mostrar historial: 'Consulta' object has no attribute 'mascota'
+2025-05-18 20:45:40,344 - WARNING - clinica_veterinaria - Error al mostrar historial: 'Consulta' object has no attribute 'mascota'
+2025-05-18 20:47:03,020 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño B
+2025-05-18 20:47:03,022 - INFO - clinica_veterinaria - La mascota A se ha creado exitosamente.
+2025-05-18 20:47:08,932 - WARNING - clinica_veterinaria - Cuidado, intento de buscar mascota A sin nombre registrado
+2025-05-18 20:47:42,326 - INFO - clinica_veterinaria - Mascotas listadas con exito.
+2025-05-18 20:47:57,716 - WARNING - clinica_veterinaria - Cuidado, intento de buscar mascota A sin nombre registrado
+2025-05-18 20:48:45,907 - INFO - clinica_veterinaria - Mascotas listadas con exito.
+2025-05-18 20:50:39,705 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño B
+2025-05-18 20:50:39,705 - INFO - clinica_veterinaria - La mascota A se ha creado exitosamente.
+2025-05-18 20:50:42,450 - INFO - clinica_veterinaria - Mascotas listadas con exito.
+2025-05-18 20:51:07,314 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-18 20:51:15,971 - WARNING - clinica_veterinaria - Mascota a sin historial registrado
+2025-05-18 21:02:29,017 - INFO - clinica_veterinaria - La mascota Parcerito fue asignada a un dueño ya existente (B).
+2025-05-18 21:02:29,018 - INFO - clinica_veterinaria - La mascota Parcerito se ha creado exitosamente.
+2025-05-18 21:02:57,065 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-18 21:03:16,137 - WARNING - clinica_veterinaria - Mascota a sin historial registrado
+2025-05-18 21:03:21,355 - INFO - clinica_veterinaria - Mascotas listadas con exito.
+2025-05-18 21:03:23,082 - INFO - clinica_veterinaria - Mascotas listadas con exito.
+2025-05-18 21:04:15,206 - ERROR - clinica_veterinaria - Fecha invalida ingresada: '' -> time data '' does not match format '%d/%m/%Y'
+2025-05-18 21:04:15,206 - ERROR - clinica_veterinaria - Ha ocurrido un error al registrar la consulta: El argumento no puede estar vacio.
+2025-05-18 21:04:21,447 - ERROR - clinica_veterinaria - Error al mostrar historial: 'Consulta' object has no attribute 'mascota'
