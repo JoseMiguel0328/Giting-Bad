@@ -4,7 +4,9 @@ En este archivo se define la clase Mascota, que representa una mascota registrad
 Esta clase incluye validaciones básicas para garantizar que los datos ingresados sean correctos.
 Además, se utiliza el logger para registrar el estado de la creación de objetos y errores.
 """
+
 from config.logging_config import logger
+from exceptions.errores import DatoInvalidoError, EdadInvalidaError
 
 class Mascota():
     def __init__(self, nombre='', especie='', raza='', edad='', dueno=''):
@@ -14,25 +16,20 @@ class Mascota():
         3. Se valida que la edad sea un número entero válido.
         4. Se asigna el objeto dueño a la mascota.
         5. Se registra en el log que la mascota fue creada exitosamente.
-        6. Si ocurre un error en la validación o asignación, se registra en el log y se lanza una excepción.
         """
-        try:
-            #2
-            self.nombre = self._validar_cadena(nombre)
-            self.especie = self._validar_cadena(especie)
-            self.raza = self._validar_cadena(raza)
-            #3
-            self.edad = self._validar_edad(edad)
-            #4
-            self.dueno = dueno
-            #5
-            logger.info(f"La mascota {self.nombre} se ha creado exitosamente.")
-        #6
-        except Exception as e:
-            logger.error(f"Ha ocurrido un error creando la mascota: {e}")
-            raise
+        #2
+        self.nombre = self._validar_cadena(nombre, "nombre")
+        self.especie = self._validar_cadena(especie, "especie")
+        self.raza = self._validar_cadena(raza, "raza")
+        #3
+        self.edad = self._validar_edad(edad)
+        #4
+        self.dueno = dueno
+        #5
+        logger.info(f"La mascota {self.nombre} se ha creado exitosamente.")
+        
 
-    def _validar_cadena(self, argumento):
+    def _validar_cadena(self, argumento, campo):
         """
         1. Normaliza la cadena (capitaliza y quita espacios).
         2. Verifica que no esté vacía ni contenga solo espacios.
@@ -41,7 +38,7 @@ class Mascota():
         """
         argumento_normalizado = argumento.capitalize().strip()
         if (not argumento_normalizado or argumento_normalizado.isspace()):
-            raise ValueError("El argumento no puede estar vacío.")
+            raise DatoInvalidoError(f"El argumento {campo} no puede estar vacío.")
         return argumento_normalizado
 
     def _validar_edad(self, edad):
@@ -53,10 +50,10 @@ class Mascota():
         """
         edad_str = str(edad)
         if (not edad_str.isdigit()):
-            raise ValueError("La edad debe ser un número entero.")
+            raise EdadInvalidaError("La edad debe ser un número entero.")
         edad_int = int(edad_str)
         if (edad_int < 0):
-            raise ValueError("Edad no permitida.")
+            raise EdadInvalidaError("Edad no permitida.")
         return edad_int
 
     def __str__(self):
@@ -65,5 +62,3 @@ class Mascota():
         2. Incluye información de la mascota y su dueño.
         """
         return f"{self.nombre} ({self.especie}, {self.raza}, {self.edad} años) \n  Dueño: {self.dueno.nombre} Tel: {self.dueno.telefono}, Dir: {self.dueno.direccion}, CC:{self.dueno.documento}"
-
-

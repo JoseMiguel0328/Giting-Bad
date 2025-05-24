@@ -12,8 +12,11 @@ Estas variables son fundamentales para la ejecución de las funciones.
 Esta validación es importante para poder hacer pruebas en otros archivos de forma aislada.
 """
 
+
 from config.logging_config import logger
+from exceptions.errores import ErrorBase
 from services.gestion import (
+    mostrar_mascotas_csv,
     crear_mascota,
     crear_consulta,
     listar_mascotas,
@@ -21,11 +24,16 @@ from services.gestion import (
     menu
 )
 
+
 mascotas = {}
 duenos = {}
 consultas = []
 
+
 def main():
+
+    mostrar_mascotas_csv(mascotas, duenos)
+    
     try:
         while True:
             menu()
@@ -44,10 +52,15 @@ def main():
                     print("Gracias por usar nuestros sevicios!")
                     break
                 case _:
-                    print("Ingrese una opción valida.")
+                    print("Ingrese una opción valida.") 
+
+    except ErrorBase as e:
+        print("Error de validación de datos.")
+        logger.warning(f"Error de validación en main: {e}")
+
     except Exception as e:
-        logger.critical("Ha ocurrido un error fatal en el menu.")
-        raise
+        print("Ha ocurrido un error fatal. Visite el log para más información.")
+        logger.critical(f"Error inesperado en main: {e}", exc_info=True)
 
 if __name__ == "__main__":
     main()

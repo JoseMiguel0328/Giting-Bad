@@ -5,10 +5,14 @@ En este archivo se almacenan todas las funciones que permiten que el aplicativo 
 Para garantizar su funcionamiento, lo primero que hacemos es importar todos los objetos y el logger.
 """
 
+import csv
+import os
 from models.mascota import Mascota
 from models.dueno import Dueno
 from models.consulta import Consulta
 from config.logging_config import logger
+from exceptions.errores import ErrorBase
+
 
 """
 A. La función crear_mascota registra nuevas mascotas y las relaciona con sus dueños.
@@ -16,12 +20,71 @@ B. La función crear_consulta registra una nueva consulta veterinaria asociada a
 C. La función listar_mascotas muestra toda la información de las mascotas y sus respectivos dueños.
 D. La función mostrar_historial muestra todas las consultas que se han realizado a una mascota específica.
 E. La función menu imprime el menú con el que va a interactuar el usuario.
-
 - Todas estas funciones serán llamadas desde el archivo main.py.
 """
 
+def mostrar_mascotas_csv(mascotas, duenos):
+    try:
+        csv_dir = os.path.join(os.path.dirname(__file__), '..', 'data')
+        csv_mascota_file = os.path.join(csv_dir, 'mascotas_duenos.csv')
+
+        if not os.path.exists(csv_mascota_file):
+            print("No hay información de mascotas guardada.")
+            logger.info("Intento de listar mascotas sin archivo CSV presente.")
+            return 
+
+        with open(csv_mascota_file, 'r', encoding='utf-8') as file:
+            reader = csv.DictReader(file)  # Cambiar a DictReader para acceder por nombre de columna
+            
+            filas_leidas = False  # Para verificar si leímos filas
+            
+            for fila in reader:
+                filas_leidas = True
+                doc_dueno = fila['dueno_documento'].strip()
+                
+                if doc_dueno not in duenos:
+                    dueno = Dueno(
+                        fila['dueno_nombre'].strip(),
+                        fila['dueno_telefono'].strip(),
+                        fila['dueno_direccion'].strip(),
+                        doc_dueno
+                    )
+                    duenos[doc_dueno] = dueno
+                else:
+                    dueno = duenos[doc_dueno]
+
+                mascota = Mascota(
+                    fila['nombre'].strip(),
+                    fila['especie'].strip(),
+                    fila['raza'].strip(),
+                    fila['edad'].strip(),
+                    dueno
+                )
+                mascotas[fila['nombre'].strip()] = mascota
+
+            if not filas_leidas:
+                print("No hay mascotas en el archivo")
+                return
+
+        print("\nMascotas cargadas y listas:")
+        for m in mascotas.values():
+            print(m)
+
+        logger.info("Mascotas y dueños cargados desde CSV con éxito.")
+
+    except Exception as e:
+        logger.error(f"Error al mostrar mascotas desde CSV: {e}")
+        print("Hubo un error al intentar cargar las mascotas desde el archivo.")
+
 # A
 def crear_mascota(mascotas, duenos):
+
+    csv_dir = os.path.join(os.path.dirname(__file__), '..', 'data')
+    os.makedirs(csv_dir, exist_ok=True) 
+
+    # 2. 
+    csv_mascota_file = os.path.join(csv_dir, 'mascotas_duenos.csv')
+
     """
     0. Se usa un bloque try para capturar errores.
     1. Se solicita al usuario la información básica de la mascota.
@@ -64,10 +127,41 @@ def crear_mascota(mascotas, duenos):
         nueva_mascota = Mascota(nombre_mascota, especie_mascota, raza_mascota, edad_mascota, dueno)
         mascotas[nombre_mascota] = nueva_mascota
         print(f"\nLa mascota {nombre_mascota} fue agregada correctamente ✓")
-    except Exception as e:
+
+        existe = os.path.isfile(csv_mascota_file)  # Verifica si el archivo csv existe
+        with open(csv_mascota_file, 'a', newline='', encoding='utf-8') as file:
+            writer = csv.writer(file)
+            if not existe:
+                # Escribe encabezado solo si no existe el archivo
+                writer.writerow(['nombre', 'especie', 'raza', 'edad', 'dueno_nombre', 'dueno_telefono', 'dueno_direccion', 'dueno_documento'])
+            # Escribe la fila con datos
+            writer.writerow([
+                nueva_mascota.nombre,
+                nueva_mascota.especie,
+                nueva_mascota.raza,
+                nueva_mascota.edad,
+                dueno.nombre,
+                dueno.telefono,
+                dueno.direccion,
+                dueno.documento
+            ])
+
+    except ErrorBase as e:
         # 9
         logger.error(f"Ha ocurrido un error registrando una nueva mascota o dueño: {e}")
         print("Ha ocurrido un error llenando la información del formulario. Intente de nuevo.")
+
+"""
+def mostrar_info_csv(): 
+    csv_dir = os.path.join(os.path.dirname(__file__), '..', 'data')
+    csv_mascota_file = os.path.join(csv_dir, 'mascota_duenos.csv')
+    if not os.path.exists(csv_mascota_file):
+        print("No hay información de mascotas guardada")
+        return
+    with open(csv_mascota_file, 'r', encoding='utf-8') as file:
+        reader = csv.reader(file)
+        encabezado = next(reader, None)
+"""
 
 # B
 def crear_consulta(mascotas, consultas):
@@ -81,7 +175,7 @@ def crear_consulta(mascotas, consultas):
     """
     try:
         # 1
-        nombre_mascota = input("Nombre de la mascota: ").strip().capitalize()
+        nombre_mascota = input("Nombre de la mascota: ").strip()
         # 2
         if nombre_mascota not in mascotas:
             print(f"\nNo se encontró una mascota registrada con el nombre {nombre_mascota}.")
@@ -98,7 +192,7 @@ def crear_consulta(mascotas, consultas):
 
         # 4        
         print(f"Consulta registrada correctamente para {nombre_mascota} ✓")
-    except Exception as e:
+    except ErrorBase as e:
         # 6
         logger.error(f"Error al registrar consulta: {e}")
         print("Ha ocurrido un error registrando una nueva consulta, porfavor verifique la información.")
@@ -135,9 +229,11 @@ def mostrar_historial(mascotas, consultas):
     try:
         # 1
         if not mascotas:
+            
             print("No hay mascotas registradas.")
             logger.warning("No hay mascota registrada.")
             return
+            
 
         # 2
         nombre_mascota = input("Ingrese el nombre de la mascota: ").strip().capitalize()
@@ -162,7 +258,7 @@ def mostrar_historial(mascotas, consultas):
         print(f"El historial de {nombre_mascota} es el siguiente:\n")
         for consulta in historial:
             print(f"- {consulta}")
-    except Exception as e:
+    except ErrorBase as e:
         # 6
         logger.error(f"Error al mostrar historial: {e}")
         print(f"Estamos teniendo problemas al listar el historial de {nombre_mascota}, sentimos los inconvenientes.")

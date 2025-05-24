@@ -4,7 +4,9 @@ En este archivo se define la clase Dueno, que representa al dueño de una mascot
 Se validan los datos básicos del dueño y se registran los procesos importantes mediante el logger.
 
 """
+import csv
 from config.logging_config import logger
+from exceptions.errores import DatoInvalidoError, TelefonoInvalidoError, DocumentoInvalidoError
 
 class Dueno():
     def __init__(self, nombre='', telefono='', direccion='', documento=''):
@@ -15,24 +17,18 @@ class Dueno():
         4. Se valida que el documento tenga al menos 4 dígitos y sea numérico.
         5. Si todo es correcto, se asignan los valores como atributos.
         6. Se deja registro en el log de que el dueño fue registrado exitosamente.
-        7. Si ocurre un error, se registra el error en el log y se lanza una excepción.
         """
-        try:
-            #2
-            self.nombre = self._validar_cadena(nombre)
-            #3
-            self.telefono = self._validar_telefono(telefono)
-            #2
-            self.direccion = self._validar_cadena(direccion)
-            #4
-            self.documento = self._validar_documento(documento)
-            #6
-            logger.info(f"Se ha registrado exitosamente el dueño {self.nombre}")
-        #7
-        except Exception as e:
-            logger.error(f"Ha ocurrido el siguiente error al registrar el dueno: {e}")
-            raise
-   
+        #2
+        self.nombre = self._validar_cadena(nombre, "nombre")
+        #3
+        self.telefono = self._validar_telefono(telefono)
+        #2
+        self.direccion = self._validar_cadena(direccion, "dirección")
+        #4
+        self.documento = self._validar_documento(documento)
+        #6
+        logger.info(f"Se ha registrado exitosamente el dueño {self.nombre}")
+
     def _validar_telefono(self, telefono):
         """
         1. Convierte el teléfono a string.
@@ -42,10 +38,10 @@ class Dueno():
         """
         telefono_str = str(telefono)
         if (not telefono_str.isdigit() or len(telefono_str) < 10):
-            raise ValueError("Número de teléfono inválido")
+            raise TelefonoInvalidoError("Número de teléfono inválido")
         return telefono_str
-   
-    def _validar_cadena(self, argumento):
+
+    def _validar_cadena(self, argumento, campo):
         """
         1. Normaliza el texto (capitaliza y elimina espacios).
         2. Verifica que no esté vacío ni contenga solo espacios.
@@ -54,9 +50,9 @@ class Dueno():
         """
         argumento_normalizado = argumento.capitalize().strip()
         if (not argumento_normalizado or argumento_normalizado.isspace()):
-            raise ValueError("El argumento no puede estar vacío.")
+            raise DatoInvalidoError(f"El argumento {campo} no puede estar vacío.")
         return argumento_normalizado
-   
+
     def _validar_documento(self, documento):
         """
         1. Normaliza el documento quitando espacios.
@@ -66,6 +62,6 @@ class Dueno():
         """
         documento_normalizado = str(documento.strip())
         if (not documento_normalizado.isdigit() or len(documento_normalizado) < 4):
-            raise ValueError("El documento es inválido.")
+            raise DocumentoInvalidoError("El documento es inválido.")
         return documento_normalizado
 

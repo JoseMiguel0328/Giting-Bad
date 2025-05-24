@@ -1,10 +1,13 @@
 """
+
 ---- Información ----
 En este archivo se define la clase Consulta, que representa una consulta médica hecha a una mascota.
 Valida los datos ingresados y deja registro en los logs del sistema para control y depuración.
 """
+import json 
 from config.logging_config import logger
 from datetime import datetime
+from exceptions.errores import DatoInvalidoError, FechaInvalidaError
 
 class Consulta():
     def __init__(self, fecha='', motivo='', diagnostico='', mascota=''):
@@ -14,24 +17,18 @@ class Consulta():
         3. Valida que el motivo y el diagnóstico no estén vacíos.
         4. Si todo es válido, asigna los valores a los atributos.
         5. Deja registro en el log de que la consulta fue registrada exitosamente.
-        6. Si hay algún error en los datos, se deja registro en el log del error.
         """
-        try:
-            #2
-            self.fecha = self._validar_fecha(fecha)
-            #3
-            self.motivo = self._validar_cadena(motivo)
-            self.diagnostico = self._validar_cadena(diagnostico)
-            #4
-            self.mascota = mascota
-            #5
-            logger.info("La consulta se ha registrado correctamente.")
-        #6
-        except Exception as e:
-            logger.error(f"Ha ocurrido un error al registrar la consulta: {e}")
-            raise
+        #2
+        self.fecha = self._validar_fecha(fecha)
+        #3
+        self.motivo = self._validar_cadena(motivo, "motivo")
+        self.diagnostico = self._validar_cadena(diagnostico, "diagnóstico")
+        #4
+        self.mascota = mascota
+        #5
+        logger.info("La consulta se ha registrado correctamente.")
 
-    def _validar_cadena(self, argumento):
+    def _validar_cadena(self, argumento, campo):
         """
         1. Normaliza el texto (capitaliza y elimina espacios).
         2. Verifica que no esté vacío ni contenga solo espacios.
@@ -40,7 +37,7 @@ class Consulta():
         """
         argumento_normalizado = argumento.capitalize().strip()
         if (not argumento_normalizado or argumento_normalizado.isspace()):
-            raise ValueError("El argumento no puede estar vacío.")
+            raise DatoInvalidoError(f"El argumento {campo} no puede estar vacío.")
         return argumento_normalizado
 
     def _validar_fecha(self, fecha):
@@ -52,9 +49,8 @@ class Consulta():
         try:
             fecha_normalizada = datetime.strptime(fecha.strip(), "%d/%m/%Y")
             return fecha_normalizada
-        except ValueError as e:
-            logger.error(f"Fecha inválida ingresada: '{fecha}' -> {e}")
-            raise ValueError(f"Formato de fecha inválido. Use dd/mm/aaaa.")
+        except ValueError:
+            raise FechaInvalidaError(f"Formato de fecha inválido. Use dd/mm/aaaa.")
 
     def __str__(self):
         """
@@ -62,3 +58,21 @@ class Consulta():
         Se puede usar, por ejemplo, al imprimir el objeto en consola.
         """
         return f"Fecha: {self.fecha}, Motivo: {self.motivo}, Diagnóstico: {self.diagnostico}"
+
+    def to_dict(self):
+        """
+        Método que convierte la instancia de la clase Consulta a un diccionario.
+        Esto es útil para serializar el objeto, por ejemplo, al guardarlo en una base de datos.
+        """
+        return {
+            'fecha': self.fecha.strftime("%d/%m/%Y"),
+            'motivo': self.motivo,
+            'diagnostico': self.diagnostico,
+            'mascota': self.mascota
+        }
+"""    
+holapo = Consulta("21/05/2023", "Chequeo general", "Todo en orden", "Perro")
+
+json_str = json.dumps(holapo.to_dict(), indent=4)
+print(json_str)
+"""
