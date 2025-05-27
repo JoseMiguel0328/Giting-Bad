@@ -160,3 +160,11 @@ ValueError: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/
 2025-05-23 21:58:53,182 - INFO - clinica_veterinaria - Mascotas listadas con éxito.
 2025-05-23 22:07:35,174 - ERROR - clinica_veterinaria - Error al mostrar mascotas desde CSV: 'dueno_documento'
 2025-05-23 22:07:40,384 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-25 20:40:52,130 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Max
+2025-05-25 20:40:52,131 - INFO - clinica_veterinaria - La mascota Homero se ha creado exitosamente.
+2025-05-25 20:41:15,029 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Max
+2025-05-25 20:41:15,030 - INFO - clinica_veterinaria - La mascota Homero se ha creado exitosamente.
+2025-05-25 20:41:33,762 - INFO - clinica_veterinaria - Mascotas listadas con éxito.
+2025-05-25 21:11:56,824 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Max
+2025-05-25 21:11:56,824 - INFO - clinica_veterinaria - La mascota Homero se ha creado exitosamente.
+2025-05-25 21:12:11,521 - INFO - clinica_veterinaria - Mascotas listadas con éxito.
