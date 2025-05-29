@@ -7,8 +7,8 @@ Aquí encontrarás todos los ejercicios y retos desarrollados durante los distin
 
 ## 👥 Integrantes del equipo
 
-| Nombre              | Rol /                        |
+| Nombre              | Rol                          |
 |---------------------|------------------------------|
-| José Domínguez      | Participante /               |
-| Miguel Arroyave     | Participante /               |
-| Jeronimo Gutierrez  | Participante /               |
+| José Domínguez      | Participante                 |
+| Miguel Arroyave     | Participante                 |
+|                     | Participante                 |
