@@ -168,3 +168,42 @@ ValueError: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/
 2025-05-25 21:11:56,824 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Max
 2025-05-25 21:11:56,824 - INFO - clinica_veterinaria - La mascota Homero se ha creado exitosamente.
 2025-05-25 21:12:11,521 - INFO - clinica_veterinaria - Mascotas listadas con éxito.
+2025-05-29 19:09:46,072 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Max
+2025-05-29 19:09:46,072 - INFO - clinica_veterinaria - La mascota Homero se ha creado exitosamente.
+2025-05-29 19:09:46,072 - INFO - clinica_veterinaria - Se cargo la información orrectamente
+2025-05-29 19:09:46,072 - ERROR - clinica_veterinaria - El archivo consultas.json no existe. Imposible cargar la información.
+2025-05-29 19:11:16,059 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Max
+2025-05-29 19:11:16,059 - INFO - clinica_veterinaria - La mascota Homero se ha creado exitosamente.
+2025-05-29 19:11:16,059 - INFO - clinica_veterinaria - Se cargo la información orrectamente
+2025-05-29 19:11:16,060 - ERROR - clinica_veterinaria - El archivo consultas.json no existe. Imposible cargar la información.
+2025-05-29 19:11:41,644 - INFO - clinica_veterinaria - Mascotas listadas con éxito.
+2025-05-29 19:12:19,837 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-29 19:12:19,838 - INFO - clinica_veterinaria - Se han guardado las consultas correctamente.
+2025-05-29 19:13:22,168 - WARNING - clinica_veterinaria - Cuidado, intento de buscar mascota  sin nombre registrado.
+2025-05-29 19:13:22,169 - INFO - clinica_veterinaria - Se han guardado las consultas correctamente.
+2025-05-29 19:13:49,982 - INFO - clinica_veterinaria - La mascota Parcerito fue asignada a un dueño ya existente (Max).
+2025-05-29 19:13:49,983 - INFO - clinica_veterinaria - La mascota Parcerito se ha creado exitosamente.
+2025-05-29 19:14:40,586 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-29 19:14:40,587 - INFO - clinica_veterinaria - Se han guardado las consultas correctamente.
+2025-05-29 19:15:12,484 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Max
+2025-05-29 19:15:12,485 - INFO - clinica_veterinaria - La mascota Homero se ha creado exitosamente.
+2025-05-29 19:15:12,485 - INFO - clinica_veterinaria - La mascota Parcerito se ha creado exitosamente.
+2025-05-29 19:15:12,485 - INFO - clinica_veterinaria - Se cargo la información orrectamente
+2025-05-29 19:15:12,488 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-29 19:15:12,488 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-29 19:15:12,488 - INFO - clinica_veterinaria - Información de consultas cargada satisfactoriamente.
+2025-05-29 19:15:59,271 - WARNING - clinica_veterinaria - Mascota Parcerito sin historial registrado.
+2025-05-29 19:18:36,261 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Max
+2025-05-29 19:18:36,261 - INFO - clinica_veterinaria - La mascota Homero se ha creado exitosamente.
+2025-05-29 19:18:36,261 - INFO - clinica_veterinaria - La mascota Parcerito se ha creado exitosamente.
+2025-05-29 19:18:36,261 - INFO - clinica_veterinaria - Se cargo la información orrectamente
+2025-05-29 19:18:36,265 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-29 19:18:36,265 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-29 19:18:36,265 - INFO - clinica_veterinaria - Información de consultas cargada satisfactoriamente.
+2025-05-29 19:20:15,481 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-29 19:20:15,482 - WARNING - clinica_veterinaria - Se han borrado las consultas.
+2025-05-29 19:20:23,747 - WARNING - clinica_veterinaria - No hay mascota registrada.
+2025-05-29 19:20:28,277 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-29 19:20:34,813 - INFO - clinica_veterinaria - Se cargo la información orrectamente
+2025-05-29 19:20:34,814 - INFO - clinica_veterinaria - Información de consultas cargada satisfactoriamente.
+2025-05-29 19:20:42,470 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.

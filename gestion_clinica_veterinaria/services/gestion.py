@@ -13,6 +13,17 @@ from models.consulta import Consulta
 from config.logging_config import logger  
 from exceptions.errores import ErrorBase  
 
+
+"""
+A. La función crear_mascota registra nuevas mascotas y las relaciona con sus dueños.
+B. La función crear_consulta registra una nueva consulta veterinaria asociada a una mascota específica.
+C. La función listar_mascotas muestra toda la información de las mascotas y sus respectivos dueños.
+D. La función mostrar_historial muestra todas las consultas que se han realizado a una mascota específica.
+E. La función menu imprime el menú con el que va a interactuar el usuario.
+- Todas estas funciones serán llamadas desde el archivo main.py.
+"""
+
+
 RUTA_ARCHIVO = os.path.join(os.path.dirname(__file__), '..', 'data', 'mascotas_duenos.csv')
 
 def mostrar_mascotas_csv(mascotas, duenos):
@@ -52,6 +63,7 @@ def mostrar_mascotas_csv(mascotas, duenos):
                 mascotas[nombre_mascota] = mascota
 
         print("Datos cargados correctamente desde el archivo CSV.")
+        logger.info("Se cargo la información orrectamente")
 
         print("\nListado de mascotas cargadas:")
         # 4
@@ -63,8 +75,11 @@ def mostrar_mascotas_csv(mascotas, duenos):
     except FileNotFoundError:
         # 5
         print(f"Archivo {RUTA_ARCHIVO} no encontrado.")
+        logger.warning(f"No se encontro información en {RUTA_ARCHIVO}")
     except Exception as e:
         print(f"Ocurrió un error al cargar los datos: {e}")
+        logger.error(f"Ha habido un problema cargando la información{e}")
+
 
 def crear_mascota(mascotas, duenos):
     """
@@ -130,6 +145,8 @@ def crear_mascota(mascotas, duenos):
         logger.error(f"Ha ocurrido un error registrando una nueva mascota o dueño: {e}")
         print("Ha ocurrido un error llenando la información del formulario. Intente de nuevo.")
 
+
+# B
 def crear_consulta(mascotas, consultas):
     """
     B. Registra una nueva consulta veterinaria para una mascota existente.
@@ -163,6 +180,8 @@ def crear_consulta(mascotas, consultas):
         logger.error(f"Error al registrar consulta: {e}")
         print("Ha ocurrido un error registrando una nueva consulta, porfavor verifique la información.")
 
+
+# C
 def listar_mascotas(mascotas):
     """
     C. Lista todas las mascotas registradas.
@@ -184,6 +203,8 @@ def listar_mascotas(mascotas):
         # 3
         logger.error(f"Error al listar las mascotas: {e}")
 
+
+# D
 def mostrar_historial(mascotas, consultas):
     """
     D. Muestra el historial de consultas de una mascota.
@@ -229,6 +250,7 @@ def mostrar_historial(mascotas, consultas):
         logger.error(f"Error al mostrar historial: {e}")
         print(f"Estamos teniendo problemas al listar el historial de {nombre_mascota}, sentimos los inconvenientes.")
 
+
 def borrar_datos_csv():
     """
     1. Borra todo el contenido del archivo CSV de mascotas y dueños.
@@ -240,19 +262,24 @@ def borrar_datos_csv():
         with open(csv_mascota_file, 'w', encoding='utf-8') as file:
             file.write('')  # 1
         print("Archivo CSV limpiado correctamente.")
+        logger.info("Se borro la información correctamente")
     except Exception as e:
         # 2
         print(f"Error limpiando el archivo CSV: {e}")
+        logger.error(f"Error limpiando el archivo CSV: {e}")
+
 
 def menu():
     """
     E. Muestra el menú principal de opciones para el usuario.
     1. Imprime las opciones disponibles.
     """
-    print("==== Menú principal ====")
+    print("========================")
+    print("---- Menú principal ----")
+    print("========================")
     print("1. Registrar nueva mascota")
     print("2. Registrar nueva consulta")
     print("3. Listar mascotas")
     print("4. Mostrar historial de consultas")
-    print("5. Borrar datos CSV")
+    print("5. Borrar datos")
     print("6. Salir")

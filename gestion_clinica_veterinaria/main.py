@@ -14,6 +14,12 @@ Esta validación es importante para poder hacer pruebas en otros archivos de for
 
 from config.logging_config import logger
 from exceptions.errores import ErrorBase 
+from services.consultas_info import (
+    guardar_consultas_json, 
+    cargar_consultas_json, 
+    borrar_consultas_json
+)
+
 from services.gestion import (             
     mostrar_mascotas_csv,
     crear_mascota,
@@ -30,6 +36,7 @@ duenos = {}
 consultas = []
 
 mostrar_mascotas_csv(mascotas, duenos)
+cargar_consultas_json(consultas, mascotas)
 
 def main():
     try:
@@ -42,17 +49,19 @@ def main():
                     crear_mascota(mascotas, duenos)
                 case 2:  
                     crear_consulta(mascotas, consultas)
+                    guardar_consultas_json(consultas)
                 case 3:  
                     listar_mascotas(mascotas)
                 case 4:  
                     mostrar_historial(mascotas, consultas)
                 case 5:  
-                    confirmacion = input("¿Está seguro que desea borrar toda la información? (s/n): ").lower().strip()
+                    confirmacion = input("¿Está seguro que desea borrar toda la información? (s/n): ").lower()
                     if confirmacion == 's':
                         borrar_datos_csv()
                         mascotas.clear()
                         duenos.clear()
                         consultas.clear()
+                        borrar_consultas_json()
                     else:
                         print("Operación cancelada.")
                 case 6:  
