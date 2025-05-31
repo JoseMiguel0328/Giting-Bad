@@ -207,3 +207,632 @@ ValueError: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/
 2025-05-29 19:20:34,813 - INFO - clinica_veterinaria - Se cargo la información orrectamente
 2025-05-29 19:20:34,814 - INFO - clinica_veterinaria - Información de consultas cargada satisfactoriamente.
 2025-05-29 19:20:42,470 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-29 20:04:16,266 - INFO - clinica_veterinaria - Se cargo la información orrectamente
+2025-05-29 20:04:16,267 - INFO - clinica_veterinaria - Información de consultas cargada satisfactoriamente.
+2025-05-29 20:04:21,748 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-29 20:04:21,750 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: Número de teléfono inválido
+2025-05-29 20:04:21,750 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-29 20:06:31,432 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-29 20:06:31,434 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-29 20:06:31,436 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: Número de teléfono inválido
+2025-05-29 20:06:31,437 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-29 20:07:06,824 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-29 20:07:06,826 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-29 20:07:06,828 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: Número de teléfono inválido
+2025-05-29 20:07:06,828 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-29 20:12:22,369 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-29 20:12:22,371 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-29 20:12:22,372 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: Número de teléfono inválido
+2025-05-29 20:12:22,373 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-29 20:12:44,431 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-29 20:12:44,433 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-29 20:12:44,435 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: Número de teléfono inválido
+2025-05-29 20:12:44,435 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-29 20:13:26,997 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-29 20:13:26,999 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-29 20:13:27,001 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: Número de teléfono inválido
+2025-05-29 20:13:27,001 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 18:21:46,355 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:21:46,357 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 18:21:46,358 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: Número de teléfono inválido
+2025-05-30 18:21:46,359 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 18:25:12,012 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:25:12,014 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 18:25:12,016 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: Número de teléfono inválido
+2025-05-30 18:25:12,017 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 18:34:27,164 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:34:27,167 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 18:34:27,168 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: Número de teléfono inválido
+2025-05-30 18:34:27,171 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 18:44:29,601 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:44:29,603 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 18:44:29,604 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: Número de teléfono inválido
+2025-05-30 18:44:29,614 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: Número de teléfono inválido
+2025-05-30 18:44:29,616 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 18:44:47,212 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:44:47,215 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 18:44:47,217 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: Número de teléfono inválido
+2025-05-30 18:44:47,221 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: Número de teléfono inválido
+2025-05-30 18:44:47,223 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 18:46:54,218 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:46:54,221 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 18:46:54,222 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:46:54,222 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:46:54,223 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 18:48:36,987 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:48:36,991 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 18:48:36,992 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:48:36,992 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:48:36,993 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 18:49:02,588 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:49:02,590 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 18:49:02,592 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:49:02,592 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:49:02,593 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 18:52:07,742 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:52:07,744 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 18:52:07,746 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:52:07,746 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:52:07,747 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 18:52:49,648 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:52:49,650 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 18:52:49,652 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:52:49,652 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:52:49,653 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 18:52:49,653 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:52:49,653 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:52:49,654 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:52:49,654 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:52:49,654 - INFO - clinica_veterinaria - La mascota Max se ha creado exitosamente.
+2025-05-30 18:52:49,654 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:52:49,654 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:53:15,265 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:53:15,267 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 18:53:15,268 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:53:15,268 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:53:15,269 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 18:53:15,269 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:53:15,269 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:53:15,269 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:53:15,269 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:53:15,269 - INFO - clinica_veterinaria - La mascota Max se ha creado exitosamente.
+2025-05-30 18:53:15,269 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:53:15,269 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:53:24,789 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:53:24,792 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 18:53:24,794 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:53:24,794 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:53:24,795 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 18:53:24,795 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:53:24,795 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:53:24,795 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:53:24,796 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:53:24,796 - INFO - clinica_veterinaria - La mascota Max se ha creado exitosamente.
+2025-05-30 18:53:24,796 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:53:24,796 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:55:36,279 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:55:36,281 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 18:55:36,283 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:55:36,283 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:55:36,284 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 18:55:36,284 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:55:36,284 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:55:36,284 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:55:36,284 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:55:36,284 - INFO - clinica_veterinaria - La mascota Max se ha creado exitosamente.
+2025-05-30 18:55:36,284 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:55:36,284 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:55:36,284 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:55:36,286 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:55:36,286 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:55:36,288 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:55:36,288 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:55:36,290 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:55:36,290 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:55:36,291 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:55:36,291 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:55:36,291 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:55:36,291 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:55:36,293 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:55:36,293 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:37,806 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:56:37,809 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 18:56:37,810 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:56:37,810 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:37,811 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 18:56:37,811 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:56:37,811 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:37,811 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:56:37,811 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:37,811 - INFO - clinica_veterinaria - La mascota Max se ha creado exitosamente.
+2025-05-30 18:56:37,811 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:56:37,811 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:37,811 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:37,812 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:56:37,812 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:37,813 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:56:37,813 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:37,814 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:56:37,814 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:37,814 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:56:37,814 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:37,814 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:56:37,815 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:37,815 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:56:37,815 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:37,815 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:53,482 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:56:53,485 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 18:56:53,486 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:56:53,487 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:53,487 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 18:56:53,488 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:56:53,488 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:53,488 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:56:53,488 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:53,488 - INFO - clinica_veterinaria - La mascota Max se ha creado exitosamente.
+2025-05-30 18:56:53,488 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:56:53,488 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:53,488 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:53,489 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:56:53,489 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:53,490 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:56:53,491 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:53,491 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:56:53,491 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:53,492 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:56:53,492 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:53,492 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:56:53,492 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:53,493 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 18:56:53,493 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 18:56:53,493 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:03:47,545 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-30 19:03:47,546 - WARNING - clinica_veterinaria - Cuidado, intento de buscar mascota NoExiste sin nombre registrado.
+2025-05-30 19:03:47,546 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:03:47,548 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 19:03:47,550 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:03:47,550 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:03:47,551 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 19:03:47,551 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:03:47,551 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:03:47,551 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:03:47,552 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:03:47,552 - INFO - clinica_veterinaria - La mascota Max se ha creado exitosamente.
+2025-05-30 19:03:47,552 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:03:47,552 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:03:47,552 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:03:47,553 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:03:47,553 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:03:47,555 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:03:47,555 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:03:47,555 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:03:47,555 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:03:47,556 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:03:47,556 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:03:47,556 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:03:47,556 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:03:47,557 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:03:47,557 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:03:47,557 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:04:56,381 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-30 19:04:56,382 - WARNING - clinica_veterinaria - Cuidado, intento de buscar mascota NoExiste sin nombre registrado.
+2025-05-30 19:04:56,382 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:04:56,384 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 19:04:56,386 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:04:56,386 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:04:56,387 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 19:04:56,387 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:04:56,387 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:04:56,387 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:04:56,387 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:04:56,387 - INFO - clinica_veterinaria - La mascota Max se ha creado exitosamente.
+2025-05-30 19:04:56,387 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:04:56,387 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:04:56,387 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:04:56,388 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:04:56,388 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:04:56,388 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:04:56,388 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:04:56,388 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:04:56,388 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:04:56,388 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:04:56,388 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:04:56,388 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:04:56,388 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:04:56,388 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:04:56,388 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:04:56,388 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:08:23,943 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:08:23,945 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 19:08:23,947 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:08:23,947 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:08:23,948 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 19:08:23,948 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:08:23,948 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:08:23,948 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:08:23,948 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:08:23,948 - INFO - clinica_veterinaria - La mascota Max se ha creado exitosamente.
+2025-05-30 19:08:23,948 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:08:23,948 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:08:23,948 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:08:23,949 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:08:23,949 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:08:23,950 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:08:23,950 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:08:23,950 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:08:23,950 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:08:23,950 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:08:23,950 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:08:23,951 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:08:23,951 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:08:23,951 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:08:23,951 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:08:23,951 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:09:33,564 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:09:33,566 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 19:09:33,568 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:09:33,568 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:09:33,569 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 19:09:33,569 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:09:33,569 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:09:33,569 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:09:33,569 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:09:33,569 - INFO - clinica_veterinaria - La mascota Max se ha creado exitosamente.
+2025-05-30 19:09:33,570 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:09:33,570 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:09:33,570 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:09:33,570 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:09:33,570 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:09:33,570 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:09:33,571 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:09:33,571 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:09:33,571 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:09:33,571 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:09:33,571 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:09:33,571 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:09:33,571 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:09:33,572 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:09:33,572 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:09:33,572 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:15:31,909 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-05-30 19:15:31,909 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:15:31,912 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-30 19:15:31,912 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-05-30 19:15:31,913 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:15:31,913 - WARNING - clinica_veterinaria - Cuidado, intento de buscar mascota NoExiste sin nombre registrado.
+2025-05-30 19:15:31,913 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:15:31,916 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 19:15:31,918 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:15:31,918 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:15:31,919 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 19:15:31,919 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:15:31,919 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:15:31,919 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:15:31,919 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:15:31,919 - INFO - clinica_veterinaria - La mascota Max se ha creado exitosamente.
+2025-05-30 19:15:31,920 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:15:31,920 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:15:31,920 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:15:31,920 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:15:31,921 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:15:31,921 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:15:31,921 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:15:31,921 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:15:31,921 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:15:31,921 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:15:31,921 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:15:31,921 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:15:31,921 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:15:31,921 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:15:31,921 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:16:52,738 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-05-30 19:16:52,738 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:16:52,741 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-30 19:16:52,741 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-05-30 19:16:52,741 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:16:52,742 - WARNING - clinica_veterinaria - Cuidado, intento de buscar mascota NoExiste sin nombre registrado.
+2025-05-30 19:16:52,742 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:16:52,744 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 19:16:52,745 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:16:52,745 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:16:52,746 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 19:16:52,746 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:16:52,746 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:16:52,746 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:16:52,746 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:16:52,746 - INFO - clinica_veterinaria - La mascota Max se ha creado exitosamente.
+2025-05-30 19:16:52,747 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:16:52,747 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:16:52,747 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:16:52,747 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:16:52,747 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:16:52,748 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:16:52,748 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:16:52,748 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:16:52,748 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:16:52,748 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:16:52,748 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:16:52,748 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:16:52,748 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:16:52,748 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:16:52,748 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:17:53,068 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-05-30 19:17:53,068 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:17:53,072 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-30 19:17:53,072 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-05-30 19:17:53,072 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:17:53,073 - WARNING - clinica_veterinaria - Cuidado, intento de buscar mascota NoExiste sin nombre registrado.
+2025-05-30 19:17:53,073 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:17:53,075 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 19:17:53,076 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:17:53,076 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:17:53,076 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 19:17:53,077 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:17:53,077 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:17:53,077 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:17:53,077 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:17:53,077 - INFO - clinica_veterinaria - La mascota Max se ha creado exitosamente.
+2025-05-30 19:17:53,077 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:17:53,077 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:17:53,077 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:17:53,077 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:17:53,077 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:17:53,077 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:17:53,077 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:17:53,077 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:17:53,078 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:17:53,078 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:17:53,078 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:17:53,078 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:17:53,078 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:17:53,078 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:17:53,078 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:18:04,924 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-05-30 19:18:04,924 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:18:04,927 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-30 19:18:04,928 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-05-30 19:18:04,928 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:18:04,928 - WARNING - clinica_veterinaria - Cuidado, intento de buscar mascota NoExiste sin nombre registrado.
+2025-05-30 19:18:04,929 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:18:04,930 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 19:18:04,932 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:18:04,932 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:18:04,933 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 19:18:04,933 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:18:04,933 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:18:04,933 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:18:04,933 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:18:04,933 - INFO - clinica_veterinaria - La mascota Max se ha creado exitosamente.
+2025-05-30 19:18:04,934 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:18:04,934 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:18:04,934 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:18:04,934 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:18:04,934 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:18:04,934 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:18:04,934 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:18:04,934 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:18:04,935 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:18:04,935 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:18:04,935 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:18:04,935 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:18:04,935 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:18:04,935 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:18:04,935 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:17,157 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-05-30 19:25:17,157 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:17,160 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-30 19:25:17,161 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-05-30 19:25:17,161 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:17,162 - WARNING - clinica_veterinaria - Cuidado, intento de buscar mascota NoExiste sin nombre registrado.
+2025-05-30 19:25:17,162 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:17,164 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 19:25:17,165 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:17,165 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:17,166 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 19:25:17,166 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:17,166 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:17,166 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:17,167 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:17,167 - INFO - clinica_veterinaria - La mascota Max se ha creado exitosamente.
+2025-05-30 19:25:17,167 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:17,167 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:17,167 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:17,167 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:17,167 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:17,167 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:17,167 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:17,167 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:17,167 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:17,167 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:17,167 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:17,167 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:17,167 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:17,167 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:17,167 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:30,073 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-05-30 19:25:30,073 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:30,076 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-30 19:25:30,076 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-05-30 19:25:30,076 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:30,077 - WARNING - clinica_veterinaria - Cuidado, intento de buscar mascota NoExiste sin nombre registrado.
+2025-05-30 19:25:30,077 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:30,079 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 19:25:30,080 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:30,081 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:30,081 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 19:25:30,082 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:30,082 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:30,082 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:30,082 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:30,082 - INFO - clinica_veterinaria - La mascota Max se ha creado exitosamente.
+2025-05-30 19:25:30,082 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:30,082 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:30,082 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:30,082 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:30,082 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:30,082 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:30,082 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:30,082 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:30,082 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:30,082 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:30,082 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:30,082 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:30,082 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:30,082 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:30,082 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:31,946 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-05-30 19:25:31,946 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:31,949 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-30 19:25:31,950 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-05-30 19:25:31,950 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:31,951 - WARNING - clinica_veterinaria - Cuidado, intento de buscar mascota NoExiste sin nombre registrado.
+2025-05-30 19:25:31,951 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:31,953 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 19:25:31,954 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:31,954 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:31,955 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 19:25:31,955 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:31,955 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:31,956 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:31,956 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:31,956 - INFO - clinica_veterinaria - La mascota Max se ha creado exitosamente.
+2025-05-30 19:25:31,956 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:31,956 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:31,956 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:31,956 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:31,957 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:31,957 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:31,957 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:31,957 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:31,957 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:31,957 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:31,958 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:31,958 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:31,958 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:31,958 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:31,958 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:33,216 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-05-30 19:25:33,216 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:33,219 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-30 19:25:33,220 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-05-30 19:25:33,220 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:33,220 - WARNING - clinica_veterinaria - Cuidado, intento de buscar mascota NoExiste sin nombre registrado.
+2025-05-30 19:25:33,221 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:33,223 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 19:25:33,224 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:33,224 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:33,225 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 19:25:33,226 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:33,226 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:33,226 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:33,226 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:33,226 - INFO - clinica_veterinaria - La mascota Max se ha creado exitosamente.
+2025-05-30 19:25:33,226 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:33,226 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:33,226 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:33,226 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:33,227 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:33,227 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:33,227 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:33,227 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:33,227 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:33,227 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:33,227 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:33,227 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:33,228 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:33,228 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:33,228 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:34,409 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-05-30 19:25:34,410 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:34,413 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-30 19:25:34,414 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-05-30 19:25:34,414 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:34,414 - WARNING - clinica_veterinaria - Cuidado, intento de buscar mascota NoExiste sin nombre registrado.
+2025-05-30 19:25:34,415 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:34,416 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 19:25:34,418 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:34,418 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:34,419 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 19:25:34,419 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:34,419 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:34,419 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:34,419 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:34,419 - INFO - clinica_veterinaria - La mascota Max se ha creado exitosamente.
+2025-05-30 19:25:34,419 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:34,420 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:34,420 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:34,420 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:34,420 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:34,420 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:34,420 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:34,420 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:34,420 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:34,421 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:34,421 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:34,421 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:34,421 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:34,421 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:34,421 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:35,489 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-05-30 19:25:35,489 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:35,492 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-30 19:25:35,493 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-05-30 19:25:35,493 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:35,494 - WARNING - clinica_veterinaria - Cuidado, intento de buscar mascota NoExiste sin nombre registrado.
+2025-05-30 19:25:35,494 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:35,495 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 19:25:35,496 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:35,496 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:35,497 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 19:25:35,497 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:35,497 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:35,497 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:35,498 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:35,498 - INFO - clinica_veterinaria - La mascota Max se ha creado exitosamente.
+2025-05-30 19:25:35,498 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:35,498 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:35,498 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:35,498 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:35,498 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:35,498 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:35,498 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:35,498 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:35,498 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:35,498 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:35,498 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:35,498 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:35,498 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:35,498 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:35,498 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:36,521 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-05-30 19:25:36,521 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:36,524 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-30 19:25:36,525 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-05-30 19:25:36,525 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:36,525 - WARNING - clinica_veterinaria - Cuidado, intento de buscar mascota NoExiste sin nombre registrado.
+2025-05-30 19:25:36,525 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:36,527 - INFO - clinica_veterinaria - Se borro la información correctamente
+2025-05-30 19:25:36,528 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:36,528 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:36,529 - INFO - clinica_veterinaria - Intento de listar mascotas sin haber registrado ninguna.
+2025-05-30 19:25:36,529 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:36,529 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:36,529 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:36,529 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:36,529 - INFO - clinica_veterinaria - La mascota Max se ha creado exitosamente.
+2025-05-30 19:25:36,529 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:36,529 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:36,529 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:36,529 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:36,529 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:36,530 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:36,530 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:36,530 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:36,530 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:36,530 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:36,530 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:36,530 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:36,530 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-05-30 19:25:36,530 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-30 19:25:36,530 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.

@@ -7,6 +7,7 @@ Además, se utiliza el logger para registrar el estado de la creación de objeto
 
 from config.logging_config import logger
 from exceptions.errores import DatoInvalidoError, EdadInvalidaError
+from models.dueno import Dueno
 
 class Mascota():
     def __init__(self, nombre='', especie='', raza='', edad='', dueno=''):
@@ -24,7 +25,7 @@ class Mascota():
         #3
         self.edad = self._validar_edad(edad)
         #4
-        self.dueno = dueno
+        self.dueno = self._validar_dueno(dueno)
         #5
         logger.info(f"La mascota {self.nombre} se ha creado exitosamente.")
         
@@ -56,6 +57,12 @@ class Mascota():
             raise EdadInvalidaError("Edad no permitida.")
         return edad_int
 
+    def _validar_dueno(self, dueno):
+        if dueno is None:
+            raise DatoInvalidoError("El dueño no puede estar vacío.")
+        if not isinstance(dueno, Dueno):
+            raise DatoInvalidoError("El dueño debe ser un objeto válido de la clase Dueno.")
+        return dueno
     def __str__(self):
         """
         1. Método especial que retorna una representación en texto del objeto mascota.
