@@ -8,8 +8,24 @@ Además, se utiliza el logger para registrar el estado de la creación de objeto
 from config.logging_config import logger
 from exceptions.errores import DatoInvalidoError, EdadInvalidaError
 from models.dueno import Dueno
+from services.db import Base
+from sqlalchemy.orm import relationship
+from sqlalchemy import Column, Integer, String, ForeignKey
 
-class Mascota():
+class Mascota(Base):
+
+    __tablename__='mascotas'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    nombre = Column(String)
+    especie = Column(String)
+    raza = Column(String)
+    edad = Column(Integer)
+    dueno_documento = Column(String, ForeignKey('duenos.documento'), nullable=False)
+
+    #Relaciones
+    dueno = relationship('Dueno', back_populates='mascotas')
+    consultas = relationship('Consulta', back_populates='mascota')
+
     def __init__(self, nombre='', especie='', raza='', edad='', dueno=''):
         """
         1. El constructor recibe los datos de la mascota.
@@ -19,6 +35,7 @@ class Mascota():
         5. Se registra en el log que la mascota fue creada exitosamente.
         """
         #2
+        super().__init__()
         self.nombre = self._validar_cadena(nombre, "nombre")
         self.especie = self._validar_cadena(especie, "especie")
         self.raza = self._validar_cadena(raza, "raza")
@@ -29,7 +46,6 @@ class Mascota():
         #5
         logger.info(f"La mascota {self.nombre} se ha creado exitosamente.")
         
-
     def _validar_cadena(self, argumento, campo):
         """
         1. Normaliza la cadena (capitaliza y quita espacios).

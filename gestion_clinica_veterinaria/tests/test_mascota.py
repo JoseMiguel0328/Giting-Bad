@@ -24,49 +24,49 @@ class TestMascota(unittest.TestCase):
         self.assertEqual(self.mascota.edad, 5)
 
     def test_mascota_tiene_dueno(self):
-        """Verifica que la mascota tenga un dueño asociado correctamente."""
+        #Verifica que la mascota tenga un dueño asociado correctamente.
         self.assertIsInstance(self.mascota.dueno, Dueno)
         self.assertEqual(self.mascota.dueno.nombre, "Carlos")
         self.assertEqual(self.mascota.dueno.documento, "123467890")
 
     def test_dueno_compartido(self):
-        """Verifica que dos mascotas puedan compartir el mismo dueño."""
+        #Verifica que dos mascotas puedan compartir el mismo dueño.
         otra_mascota = Mascota("Max", "Perro", "Golden", "3", self.dueno)
         self.assertEqual(otra_mascota.dueno, self.mascota.dueno)
         self.assertEqual(otra_mascota.dueno.nombre, "Carlos")
 
     def test_nombre_vacio(self):
-        """Valida que se lance una excepción si el nombre de la mascota está vacío."""
+        #Valida que se lance una excepción si el nombre de la mascota está vacío.
         with self.assertRaises(DatoInvalidoError) as context:
             Mascota("", "Perro", "Labrador", 5, self.dueno)
         self.assertIn("nombre", str(context.exception))
 
     def test_edad_decimal(self):
-        """Valida que no se acepten edades decimales para la mascota."""
+        #Valida que no se acepten edades decimales para la mascota.
         with self.assertRaises(EdadInvalidaError) as context:
             Mascota("Firulais", "Perro", "Labrador", 4.5, self.dueno)
         self.assertIn("edad", str(context.exception))
 
     def test_edad_negativa(self):
-        """Valida que no se acepten edades negativas para la mascota."""
+        #Valida que no se acepten edades negativas para la mascota.
         with self.assertRaises(EdadInvalidaError) as context:
             Mascota("Firulais", "Perro", "Labrador", -1, self.dueno)
         self.assertIn("edad", str(context.exception))
 
     def test_edad_no_entero(self):
-        """Valida que se lance error si la edad no es un número válido."""
+        #Valida que se lance error si la edad no es un número válido.
         with self.assertRaises(EdadInvalidaError) as context:
             Mascota("Firulais", "Perro", "Labrador", "cinco", self.dueno)
         self.assertIn("edad", str(context.exception))
 
     def test_dueno_invalido(self):
-        """Verifica que se lance excepción si el dueño no es una instancia válida."""
+        #Verifica que se lance excepción si el dueño no es una instancia válida.
         with self.assertRaises(DatoInvalidoError) as context:
             Mascota("Firulais", "Perro", "Labrador", 5, "no es un dueno")
         self.assertIn("dueño", str(context.exception))
 
     def test_todos_los_campos_validos(self):
-        """Verifica que no se lance ninguna excepción si los datos son correctos."""
+        #Verifica que no se lance ninguna excepción si los datos son correctos.
         try:
             mascota = Mascota("Firulais", "Perro", "Labrador", 5, self.dueno)
         except Exception:

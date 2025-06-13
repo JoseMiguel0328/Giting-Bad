@@ -5,70 +5,74 @@
 
 2. Para garantizar su funcionamiento lo primero que hacemos es importar todos las funciones y el logger.
 
-3. Seguido a esto declaramos los diccionarios 'mascotas', 'duenos' y la lista 'consultas'.
-Estas variables son fundamentales para la ejecución de las funciones.
-
-4. Finalmente validamos que si el archivo 'main.py' es el que esta siendo ejecutado funcione el programa.
+3. Finalmente validamos que si el archivo 'main.py' es el que esta siendo ejecutado funcione el programa.
 Esta validación es importante para poder hacer pruebas en otros archivos de forma aislada.
 """
 
 from config.logging_config import logger
 from exceptions.errores import ErrorBase 
-from services.consultas_info import (
-    guardar_consultas_json, 
-    cargar_consultas_json, 
-    borrar_consultas_json
-)
 
 from services.gestion import (             
-    mostrar_mascotas_csv,
     crear_mascota,
+    actualizar,
     crear_consulta,
     listar_mascotas,
+    listar_duenos,
     mostrar_historial,
-    borrar_datos_csv,
+    borrar,
     menu
 )
-
-# (3) 
-mascotas = {}
-duenos = {}
-consultas = []
-
-mostrar_mascotas_csv(mascotas, duenos)
-cargar_consultas_json(consultas, mascotas)
 
 def main():
     try:
         while True:
-            menu()  # (4) 
+            menu("principal")  # (3) 
             accion = int(input("Por favor ingrese una opción (1-6): "))
-            
+
             match accion:
                 case 1:  
-                    crear_mascota(mascotas, duenos)
+                    menu("mascotas")
+                    accion_mascota = int(input("Por favor ingrese una opción (1-6): "))
+                    match accion_mascota:
+                        case 1:
+                            crear_mascota()
+                        case 2:
+                            actualizar("mascota")
+                        case 3:
+                            listar_mascotas()
+                        case 4:
+                            borrar("mascota")
+                        case 5:
+                            pass
                 case 2:  
-                    crear_consulta(mascotas, consultas)
-                    guardar_consultas_json(consultas)
+                    menu("consultas")
+                    accion_consulta = int(input("Por favor ingrese una opción (1-6): "))
+                    match accion_consulta:
+                        case 1:
+                            crear_consulta()
+                        case 2:
+                            mostrar_historial()
+                        case 3:
+                            pass
                 case 3:  
-                    listar_mascotas(mascotas)
+                    menu("duenos")
+                    accion_dueno = int(input("Por favor ingrese una opción (1-6): "))
+                    match accion_dueno:
+                        case 1:
+                            listar_duenos()
+                        case 2:
+                            actualizar("dueno")
+                        case 3:
+                            borrar("dueno")
+                        case 4:
+                            pass
                 case 4:  
-                    mostrar_historial(mascotas, consultas)
+                    borrar("todo")
                 case 5:  
-                    confirmacion = input("¿Está seguro que desea borrar toda la información? (s/n): ").lower()
-                    if confirmacion == 's':
-                        borrar_datos_csv()
-                        mascotas.clear()
-                        duenos.clear()
-                        consultas.clear()
-                        borrar_consultas_json()
-                    else:
-                        print("Operación cancelada.")
-                case 6:  
                     print("Gracias por usar nuestros servicios!")
                     break
                 case _:  
-                    print("Ingrese una opción válida.") 
+                    print("Ingrese una opción válida.")    
 
     except ErrorBase as e:  # Manejo de errores de validación personalizados
         print("Error de validación de datos.")

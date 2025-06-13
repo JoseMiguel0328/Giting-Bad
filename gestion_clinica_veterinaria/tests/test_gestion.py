@@ -34,18 +34,6 @@ class TestGestion(unittest.TestCase):
         self.assertIn("Firulais", self.mascotas)
         self.assertIn("123467890", self.duenos)
 
-    def test_borrar_datos_csv(self):
-        """
-        Verifica que se sobrescriba el archivo CSV con una cadena vacía
-        y que se imprima el mensaje de confirmación.
-        """
-        with patch("builtins.open", mock_open()) as mocked_file:
-            with patch('builtins.print') as mocked_print:
-                gestion.borrar_datos_csv()
-                mocked_file.assert_called_once()
-                mocked_file().write.assert_called_once_with('')
-                mocked_print.assert_any_call("Archivo CSV limpiado correctamente.")
-
 if __name__ == '__main__':
     unittest.main()
 

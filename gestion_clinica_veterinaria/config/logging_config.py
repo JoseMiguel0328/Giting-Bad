@@ -41,4 +41,6 @@ file_handler.setLevel(logging.DEBUG)
 file_handler.setFormatter(formatter)        
 logger.addHandler(file_handler)
 
+logger.propagate = False
+
 

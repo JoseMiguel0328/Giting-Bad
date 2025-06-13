@@ -836,3 +836,974 @@ ValueError: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/
 2025-05-30 19:25:36,530 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
 2025-05-30 19:25:36,530 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
 2025-05-30 19:25:36,530 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-05-31 19:41:14,026 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Parcero
+2025-05-31 19:41:14,029 - CRITICAL - clinica_veterinaria - Error inesperado en main: When initializing mapper Mapper[Mascota(mascotas)], expression 'Dueno' failed to locate a name ('Dueno'). If this is a class name, consider adding this relationship() to the <class 'models.mascota.Mascota'> class after both dependent classes have been defined.
+Traceback (most recent call last):
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\clsregistry.py", line 516, in _resolve_name
+    rval = d[token]
+           ~^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\_collections.py", line 345, in __missing__
+    self[key] = val = self.creator(key)
+                      ~~~~~~~~~~~~^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\clsregistry.py", line 484, in _access_cls
+    return self.fallback[key]
+           ~~~~~~~~~~~~~^^^^^
+KeyError: 'Dueno'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\main.py", line 39, in main
+    crear_mascota(mascotas, duenos)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\services\gestion.py", line 59, in crear_mascota
+    nueva_mascota = Mascota(nombre_mascota, especie_mascota, raza_mascota, edad_mascota, dueno)
+  File "<string>", line 4, in __init__
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state.py", line 566, in _initialize_instance
+    manager.dispatch.init(self, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\event\attr.py", line 497, in __call__
+    fn(*args, **kw)
+    ~~^^^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4406, in _event_on_init
+    instrumenting_mapper._check_configure()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2401, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4214, in _configure_registries
+    _do_configure_registries(registries, cascade)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4255, in _do_configure_registries
+    mapper._post_configure_properties()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2418, in _post_configure_properties
+    prop.init()
+    ~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\interfaces.py", line 589, in init
+    self.do_init()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\relationships.py", line 1656, in do_init
+    self._setup_entity()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\relationships.py", line 1866, in _setup_entity
+    self._clsregistry_resolve_name(argument)(),
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\clsregistry.py", line 520, in _resolve_name
+    self._raise_for_name(name, err)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\clsregistry.py", line 501, in _raise_for_name
+    raise exc.InvalidRequestError(
+    ...<5 lines>...
+    ) from err
+sqlalchemy.exc.InvalidRequestError: When initializing mapper Mapper[Mascota(mascotas)], expression 'Dueno' failed to locate a name ('Dueno'). If this is a class name, consider adding this relationship() to the <class 'models.mascota.Mascota'> class after both dependent classes have been defined.
+2025-05-31 19:47:42,364 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Parcero
+2025-05-31 19:47:42,365 - CRITICAL - clinica_veterinaria - Error inesperado en main: When initializing mapper Mapper[Mascota(mascotas)], expression 'Dueno' failed to locate a name ('Dueno'). If this is a class name, consider adding this relationship() to the <class 'models.mascota.Mascota'> class after both dependent classes have been defined.
+Traceback (most recent call last):
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\clsregistry.py", line 516, in _resolve_name
+    rval = d[token]
+           ~^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\_collections.py", line 345, in __missing__
+    self[key] = val = self.creator(key)
+                      ~~~~~~~~~~~~^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\clsregistry.py", line 484, in _access_cls
+    return self.fallback[key]
+           ~~~~~~~~~~~~~^^^^^
+KeyError: 'Dueno'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\main.py", line 39, in main
+    crear_mascota(mascotas, duenos)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\services\gestion.py", line 59, in crear_mascota
+    nueva_mascota = Mascota(nombre_mascota, especie_mascota, raza_mascota, edad_mascota, dueno)
+  File "<string>", line 4, in __init__
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state.py", line 566, in _initialize_instance
+    manager.dispatch.init(self, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\event\attr.py", line 497, in __call__
+    fn(*args, **kw)
+    ~~^^^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4406, in _event_on_init
+    instrumenting_mapper._check_configure()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2401, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4214, in _configure_registries
+    _do_configure_registries(registries, cascade)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4255, in _do_configure_registries
+    mapper._post_configure_properties()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2418, in _post_configure_properties
+    prop.init()
+    ~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\interfaces.py", line 589, in init
+    self.do_init()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\relationships.py", line 1656, in do_init
+    self._setup_entity()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\relationships.py", line 1866, in _setup_entity
+    self._clsregistry_resolve_name(argument)(),
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\clsregistry.py", line 520, in _resolve_name
+    self._raise_for_name(name, err)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\clsregistry.py", line 501, in _raise_for_name
+    raise exc.InvalidRequestError(
+    ...<5 lines>...
+    ) from err
+sqlalchemy.exc.InvalidRequestError: When initializing mapper Mapper[Mascota(mascotas)], expression 'Dueno' failed to locate a name ('Dueno'). If this is a class name, consider adding this relationship() to the <class 'models.mascota.Mascota'> class after both dependent classes have been defined.
+2025-05-31 19:56:53,213 - CRITICAL - clinica_veterinaria - Error inesperado en main: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\main.py", line 35, in main
+    accion = int(input("Por favor ingrese una opción (1-6): "))
+             ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+2025-05-31 19:57:27,015 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: Número de teléfono inválido
+2025-05-31 19:57:46,158 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño B
+2025-05-31 19:57:46,159 - CRITICAL - clinica_veterinaria - Error inesperado en main: When initializing mapper Mapper[Mascota(mascotas)], expression 'Dueno' failed to locate a name ('Dueno'). If this is a class name, consider adding this relationship() to the <class 'models.mascota.Mascota'> class after both dependent classes have been defined.
+Traceback (most recent call last):
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\clsregistry.py", line 516, in _resolve_name
+    rval = d[token]
+           ~^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\_collections.py", line 345, in __missing__
+    self[key] = val = self.creator(key)
+                      ~~~~~~~~~~~~^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\clsregistry.py", line 484, in _access_cls
+    return self.fallback[key]
+           ~~~~~~~~~~~~~^^^^^
+KeyError: 'Dueno'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\main.py", line 39, in main
+    crear_mascota(mascotas, duenos)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\services\gestion.py", line 59, in crear_mascota
+    nueva_mascota = Mascota(nombre_mascota, especie_mascota, raza_mascota, edad_mascota, dueno)
+  File "<string>", line 4, in __init__
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state.py", line 566, in _initialize_instance
+    manager.dispatch.init(self, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\event\attr.py", line 497, in __call__
+    fn(*args, **kw)
+    ~~^^^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4406, in _event_on_init
+    instrumenting_mapper._check_configure()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2401, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4214, in _configure_registries
+    _do_configure_registries(registries, cascade)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4255, in _do_configure_registries
+    mapper._post_configure_properties()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2418, in _post_configure_properties
+    prop.init()
+    ~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\interfaces.py", line 589, in init
+    self.do_init()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\relationships.py", line 1656, in do_init
+    self._setup_entity()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\relationships.py", line 1866, in _setup_entity
+    self._clsregistry_resolve_name(argument)(),
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\clsregistry.py", line 520, in _resolve_name
+    self._raise_for_name(name, err)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\clsregistry.py", line 501, in _raise_for_name
+    raise exc.InvalidRequestError(
+    ...<5 lines>...
+    ) from err
+sqlalchemy.exc.InvalidRequestError: When initializing mapper Mapper[Mascota(mascotas)], expression 'Dueno' failed to locate a name ('Dueno'). If this is a class name, consider adding this relationship() to the <class 'models.mascota.Mascota'> class after both dependent classes have been defined.
+2025-05-31 20:03:04,289 - CRITICAL - clinica_veterinaria - Error inesperado en main: Mapper 'Mapper[Mascota(mascotas)]' has no property 'consultas'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+Traceback (most recent call last):
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2522, in get_property
+    return self._props[key]
+           ~~~~~~~~~~~^^^^^
+KeyError: 'consultas'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\main.py", line 39, in main
+    crear_mascota(mascotas, duenos)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\services\gestion.py", line 56, in crear_mascota
+    dueno = Dueno(nombre_dueno, telefono_dueno, direccion_dueno, documento_dueno)
+  File "<string>", line 4, in __init__
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state.py", line 566, in _initialize_instance
+    manager.dispatch.init(self, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\event\attr.py", line 497, in __call__
+    fn(*args, **kw)
+    ~~^^^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4406, in _event_on_init
+    instrumenting_mapper._check_configure()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2401, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4214, in _configure_registries
+    _do_configure_registries(registries, cascade)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4255, in _do_configure_registries
+    mapper._post_configure_properties()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2418, in _post_configure_properties
+    prop.init()
+    ~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\interfaces.py", line 589, in init
+    self.do_init()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\relationships.py", line 1661, in do_init
+    self._generate_backref()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\relationships.py", line 2145, in _generate_backref
+    self._add_reverse_property(self.back_populates)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\relationships.py", line 1592, in _add_reverse_property
+    other = self.mapper.get_property(key, _configure_mappers=False)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2524, in get_property
+    raise sa_exc.InvalidRequestError(
+    ...<3 lines>...
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Mapper 'Mapper[Mascota(mascotas)]' has no property 'consultas'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-05-31 20:09:13,421 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Parcero
+2025-05-31 20:09:13,421 - INFO - clinica_veterinaria - La mascota Parcerito se ha creado exitosamente.
+2025-05-31 20:09:13,427 - CRITICAL - clinica_veterinaria - Error inesperado en main: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 3297, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 713, in checkout
+    rec = pool._do_get()
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\impl.py", line 179, in _do_get
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    return self._create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 390, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 675, in __init__
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 901, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 897, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\create.py", line 646, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 625, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\main.py", line 39, in main
+    crear_mascota(mascotas, duenos)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\services\gestion.py", line 64, in crear_mascota
+    session.commit()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4480, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 68, in save_obj
+    ) in _organize_states_for_save(base_mapper, states, uowtransaction):
+         ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 223, in _organize_states_for_save
+    for state, dict_, mapper, connection in _connections_for_states(
+                                            ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper, uowtransaction, states
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1753, in _connections_for_states
+    connection = uowtransaction.transaction.connection(base_mapper)
+  File "<string>", line 2, in connection
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1039, in connection
+    return self._connection_for_bind(bind, execution_options)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1175, in _connection_for_bind
+    conn = self._parent._connection_for_bind(
+        bind, execution_options
+    )
+  File "<string>", line 2, in _connection_for_bind
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1189, in _connection_for_bind
+    conn = bind.connect()
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 3273, in connect
+    return self._connection_cls(self)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 147, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        err, dialect, engine
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2436, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 3297, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 713, in checkout
+    rec = pool._do_get()
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\impl.py", line 179, in _do_get
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    return self._create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 390, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 675, in __init__
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 901, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 897, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\create.py", line 646, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 625, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-05-31 20:21:24,757 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Parcero
+2025-05-31 20:21:24,757 - INFO - clinica_veterinaria - La mascota Parcerito se ha creado exitosamente.
+2025-05-31 20:21:24,771 - CRITICAL - clinica_veterinaria - Error inesperado en main: (sqlite3.OperationalError) no such table: duenos
+[SQL: INSERT INTO duenos (documento, nombre, telefono, direccion) VALUES (?, ?, ?, ?)]
+[parameters: ('123456789', 'Parcero', '1234567890', 'Calle 1')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: duenos
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\main.py", line 39, in main
+    crear_mascota(mascotas, duenos)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\services\gestion.py", line 64, in crear_mascota
+    session.commit()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4480, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1415, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: duenos
+[SQL: INSERT INTO duenos (documento, nombre, telefono, direccion) VALUES (?, ?, ?, ?)]
+[parameters: ('123456789', 'Parcero', '1234567890', 'Calle 1')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-05-31 20:31:19,817 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Parcero
+2025-05-31 20:31:19,817 - INFO - clinica_veterinaria - La mascota Parcerito se ha creado exitosamente.
+2025-05-31 20:31:19,821 - CRITICAL - clinica_veterinaria - Error inesperado en main: (sqlite3.OperationalError) no such table: duenos
+[SQL: INSERT INTO duenos (documento, nombre, telefono, direccion) VALUES (?, ?, ?, ?)]
+[parameters: ('123456789', 'Parcero', '1234567890', 'Calle 1')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: duenos
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\main.py", line 39, in main
+    crear_mascota(mascotas, duenos)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\services\gestion.py", line 64, in crear_mascota
+    session.commit()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4480, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1415, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: duenos
+[SQL: INSERT INTO duenos (documento, nombre, telefono, direccion) VALUES (?, ?, ?, ?)]
+[parameters: ('123456789', 'Parcero', '1234567890', 'Calle 1')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-05-31 20:33:52,526 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Parcero
+2025-05-31 20:33:52,527 - INFO - clinica_veterinaria - La mascota Parcerito se ha creado exitosamente.
+2025-05-31 20:33:52,530 - CRITICAL - clinica_veterinaria - Error inesperado en main: (sqlite3.OperationalError) no such table: duenos
+[SQL: INSERT INTO duenos (documento, nombre, telefono, direccion) VALUES (?, ?, ?, ?)]
+[parameters: ('1234567890', 'Parcero', '1234567890', 'Calle 1')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: duenos
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\main.py", line 39, in main
+    crear_mascota(mascotas, duenos)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\services\gestion.py", line 64, in crear_mascota
+    session.commit()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4480, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1415, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: duenos
+[SQL: INSERT INTO duenos (documento, nombre, telefono, direccion) VALUES (?, ?, ?, ?)]
+[parameters: ('1234567890', 'Parcero', '1234567890', 'Calle 1')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-05-31 20:37:58,957 - INFO - clinica_veterinaria - Iniciando creación de base de datos...
+2025-05-31 20:37:58,958 - INFO - clinica_veterinaria - Tabla encontrada: duenos
+2025-05-31 20:37:58,958 - INFO - clinica_veterinaria - Tabla encontrada: mascotas
+2025-05-31 20:37:58,958 - INFO - clinica_veterinaria - Tabla encontrada: consultas
+2025-05-31 20:37:59,000 - INFO - clinica_veterinaria - Tablas creadas: ['consultas', 'duenos', 'mascotas']
+2025-05-31 20:37:59,000 - INFO - clinica_veterinaria - Tablas creadas correctamente.
+2025-05-31 20:47:53,819 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño B
+2025-05-31 20:47:53,820 - INFO - clinica_veterinaria - La mascota A se ha creado exitosamente.
+2025-05-31 20:49:25,958 - CRITICAL - clinica_veterinaria - Error inesperado en main: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\main.py", line 35, in main
+    accion = int(input("Por favor ingrese una opción (1-6): "))
+             ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+2025-05-31 20:49:54,130 - INFO - clinica_veterinaria - Mascotas listadas con éxito.
+2025-05-31 20:54:49,353 - CRITICAL - clinica_veterinaria - Error inesperado en main: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\main.py", line 35, in main
+    listar_mascotas()
+     ~~~~~~~~~~~~~~^^
+ValueError: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+2025-05-31 20:55:16,067 - ERROR - clinica_veterinaria - Ha ocurrido un error registrando una nueva mascota o dueño: El argumento nombre no puede estar vacío.
+2025-05-31 20:55:45,065 - INFO - clinica_veterinaria - Mascotas listadas con éxito.
+2025-05-31 20:56:14,247 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-05-31 20:58:57,960 - CRITICAL - clinica_veterinaria - Error inesperado en main: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\main.py", line 27, in main
+    accion = int(input("Por favor ingrese una opción (1-6): "))
+             ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+2025-05-31 20:59:03,940 - INFO - clinica_veterinaria - Mascotas listadas con éxito.
+2025-05-31 21:00:19,215 - INFO - clinica_veterinaria - Mascotas listadas con éxito.
+2025-05-31 21:59:51,516 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Kim nam joon
+2025-05-31 21:59:51,517 - INFO - clinica_veterinaria - La mascota Caramelo waou de la triñinidad tercero se ha creado exitosamente.
+2025-05-31 22:00:27,238 - INFO - clinica_veterinaria - Mascotas listadas con éxito.
+2025-05-31 22:02:18,280 - INFO - clinica_veterinaria - Mascotas listadas con éxito.
+2025-05-31 22:03:27,489 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Parcero
+2025-05-31 22:03:27,490 - INFO - clinica_veterinaria - La mascota Parcerito se ha creado exitosamente.
+2025-05-31 22:03:30,249 - INFO - clinica_veterinaria - Mascotas listadas con éxito.
+2025-05-31 22:05:31,988 - WARNING - clinica_veterinaria - Mascota Parcerito sin historial registrado.
+2025-05-31 22:09:16,271 - WARNING - clinica_veterinaria - Cuidado, intento de buscar mascota  sin nombre registrado.
+2025-05-31 22:09:23,357 - INFO - clinica_veterinaria - Mascotas listadas con éxito.
+2025-05-31 22:11:18,813 - ERROR - clinica_veterinaria - Error al registrar consulta: Formato de fecha inválido. Use dd/mm/aaaa.
+2025-05-31 22:12:17,167 - INFO - clinica_veterinaria - La consulta se ha registrado correctamente.
+2025-06-01 18:06:18,115 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-06-01 18:06:18,116 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-06-01 18:06:18,118 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Juan pérez
+2025-06-01 18:06:18,118 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-06-01 18:06:18,119 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-06-01 18:06:18,122 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-06-01 18:06:18,122 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-06-01 18:06:18,122 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-06-01 18:06:18,122 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-06-01 18:06:18,122 - INFO - clinica_veterinaria - La mascota Max se ha creado exitosamente.
+2025-06-01 18:06:18,122 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-06-01 18:06:18,122 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-06-01 18:06:18,122 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-06-01 18:06:18,122 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-06-01 18:06:18,122 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-06-01 18:06:18,123 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-06-01 18:06:18,123 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-06-01 18:06:18,123 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-06-01 18:06:18,123 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-06-01 18:06:18,123 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-06-01 18:06:18,123 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-06-01 18:06:18,123 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-06-01 18:06:18,123 - INFO - clinica_veterinaria - Se ha registrado exitosamente el dueño Carlos
+2025-06-01 18:06:18,123 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-06-01 18:06:18,123 - INFO - clinica_veterinaria - La mascota Firulais se ha creado exitosamente.
+2025-06-05 21:19:03,802 - INFO - clinica_veterinaria - Mascotas listadas con éxito.
+2025-06-05 21:21:37,937 - INFO - clinica_veterinaria - Mascota A actualizada.
+2025-06-05 21:21:47,500 - INFO - clinica_veterinaria - Mascotas listadas con éxito.
+2025-06-05 21:35:29,910 - CRITICAL - clinica_veterinaria - Error inesperado en main: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\main.py", line 30, in main
+    accion = int(input("Por favor ingrese una opción (1-6): "))
+             ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+2025-06-05 21:37:27,172 - INFO - clinica_veterinaria - Dueño 123456789 actualizado.
+2025-06-05 21:38:34,963 - INFO - clinica_veterinaria - Mascotas listadas con éxito.
+2025-06-05 21:39:06,160 - INFO - clinica_veterinaria - Consulta actualizada para la mascota Betún.
+2025-06-05 21:50:01,884 - INFO - clinica_veterinaria - Mascota Parcerito actualizada.
+2025-06-05 21:50:06,702 - INFO - clinica_veterinaria - Mascotas listadas con éxito.
+2025-06-05 22:26:38,481 - CRITICAL - clinica_veterinaria - Error inesperado en main: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\main.py", line 31, in main
+ValueError: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+2025-06-05 22:27:29,202 - INFO - clinica_veterinaria - Mascota Parcerito eliminada exitosamente junto con 0 consultas.
+2025-06-05 22:27:34,737 - INFO - clinica_veterinaria - Mascotas listadas con éxito.
+2025-06-05 22:28:13,573 - INFO - clinica_veterinaria -  Dueños listados con éxito.
+2025-06-05 22:30:13,551 - INFO - clinica_veterinaria - Mascotas listadas con éxito.
+2025-06-05 22:31:41,860 - INFO - clinica_veterinaria - Dueños listados con éxito.
+2025-06-05 22:31:59,541 - ERROR - clinica_veterinaria - Error inesperado al eliminar dueno: type object 'Mascota' has no attribute 'dueno_id'
+2025-06-13 15:20:42,867 - INFO - clinica_veterinaria - Mascotas listadas con éxito.
+2025-06-13 15:21:18,146 - ERROR - clinica_veterinaria - Error inesperado al eliminar dueno: type object 'Mascota' has no attribute 'dueno_id'
+2025-06-13 15:21:44,472 - INFO - clinica_veterinaria - Dueños listados con éxito.
+2025-06-13 15:28:45,449 - CRITICAL - clinica_veterinaria - Error inesperado en main: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\main.py", line 30, in main
+    accion = int(input("Por favor ingrese una opción (1-6): "))
+             ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+2025-06-13 15:29:08,056 - INFO - clinica_veterinaria - Dueños listados con éxito.
+2025-06-13 15:29:25,450 - WARNING - clinica_veterinaria - Intento de eliminar dueño Parcero con 2 mascotas asociadas.
+2025-06-13 15:29:49,683 - WARNING - clinica_veterinaria - Intento de eliminar dueño Miguel Arroz con 2 mascotas asociadas.
+2025-06-13 15:31:30,628 - CRITICAL - clinica_veterinaria - Error inesperado en main: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\main.py", line 30, in main
+    accion = int(input("Por favor ingrese una opción (1-6): "))
+             ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+2025-06-13 15:31:46,903 - ERROR - clinica_veterinaria - Error inesperado al eliminar dueno: SQL expression element or literal value expected, got <models.dueno.Dueno object at 0x000001DC87A80830>.
+2025-06-13 15:32:55,893 - INFO - clinica_veterinaria - Dueños listados con éxito.
+2025-06-13 15:34:27,745 - CRITICAL - clinica_veterinaria - Error inesperado en main: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\main.py", line 30, in main
+    accion = int(input("Por favor ingrese una opción (1-6): "))
+             ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+2025-06-13 15:34:49,879 - INFO - clinica_veterinaria - Dueño Parcero (documento: 1033260414) eliminado exitosamente.
+2025-06-13 15:34:55,274 - INFO - clinica_veterinaria - Dueños listados con éxito.
+2025-06-13 15:36:36,137 - CRITICAL - clinica_veterinaria - Error inesperado en main: invalid literal for int() with base 10: 'clear'
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\main.py", line 30, in main
+    accion = int(input("Por favor ingrese una opción (1-6): "))
+             ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'clear'
+2025-06-13 15:37:44,940 - INFO - clinica_veterinaria - Dueño 123456789 actualizado.
+2025-06-13 15:40:57,556 - INFO - clinica_veterinaria - Dueño 123456789 actualizado.
+2025-06-13 15:43:17,243 - INFO - clinica_veterinaria - Dueño 123456789 actualizado.
+2025-06-13 16:01:07,481 - CRITICAL - clinica_veterinaria - Error inesperado en main: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\main.py", line 30, in main
+    accion = int(input("Por favor ingrese una opción (1-6): "))
+             ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+2025-06-13 16:01:17,000 - ERROR - clinica_veterinaria - Error al listar dueno: 'Dueno' object has no attribute 'especie'
+2025-06-13 16:09:52,080 - INFO - clinica_veterinaria - Dueños listados con éxito.
+2025-06-13 16:10:45,574 - CRITICAL - clinica_veterinaria - Error inesperado en main: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\main.py", line 30, in main
+    accion = int(input("Por favor ingrese una opción (1-6): "))
+             ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+2025-06-13 16:10:56,048 - INFO - clinica_veterinaria - Dueños listados con éxito.
+2025-06-13 16:12:21,165 - INFO - clinica_veterinaria - Dueños listados con éxito.
+2025-06-13 16:12:40,272 - INFO - clinica_veterinaria - Mascotas listadas con éxito.
+2025-06-13 16:13:51,951 - CRITICAL - clinica_veterinaria - Error inesperado en main: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Intento de estudiar\Python-Talleres-Fundamentos\gestion_clinica_veterinaria\main.py", line 30, in main
+    accion = int(input("Por favor ingrese una opción (1-6): "))
+             ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '& C:/Users/Usuario/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Usuario/Intento de estudiar/Python-Talleres-Fundamentos/gestion_clinica_veterinaria/main.py"'
+2025-06-13 16:13:56,751 - INFO - clinica_veterinaria - Dueños listados con éxito.
+2025-06-13 16:14:15,283 - INFO - clinica_veterinaria - Eliminación masiva completada: 2 consultas, 2 mascotas, 2 dueños.

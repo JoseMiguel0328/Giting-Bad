@@ -4,11 +4,24 @@ En este archivo se define la clase Dueno, que representa al dueño de una mascot
 Se validan los datos básicos del dueño y se registran los procesos importantes mediante el logger.
 
 """
-import csv
 from config.logging_config import logger
 from exceptions.errores import DatoInvalidoError, TelefonoInvalidoError, DocumentoInvalidoError
+from services.db import Base
+from sqlalchemy import Column, String, Integer
+from sqlalchemy.orm import relationship
 
-class Dueno():
+class Dueno(Base):
+
+    __tablename__='duenos'
+    documento = Column(String, primary_key=True)
+    nombre = Column(String)
+    telefono = Column(String)
+    direccion = Column(String)
+    mascotas = relationship("Mascota", back_populates="dueno")
+
+    def __str__(self):
+        return f"{self.nombre}, Tel: {self.telefono}, Dir: {self.direccion}, CC: {self.documento}"
+    
     def __init__(self, nombre='', telefono='', direccion='', documento=''):
         """
         1. El constructor recibe la información del dueño.
@@ -28,6 +41,7 @@ class Dueno():
         self.documento = self._validar_documento(documento)
         #6
         logger.info(f"Se ha registrado exitosamente el dueño {self.nombre}")
+
 
     def _validar_telefono(self, telefono):
         """

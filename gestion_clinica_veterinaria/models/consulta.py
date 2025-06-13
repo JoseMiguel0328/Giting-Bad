@@ -4,12 +4,25 @@
 En este archivo se define la clase Consulta, que representa una consulta médica hecha a una mascota.
 Valida los datos ingresados y deja registro en los logs del sistema para control y depuración.
 """
-import json 
 from config.logging_config import logger
 from datetime import datetime
 from exceptions.errores import DatoInvalidoError, FechaInvalidaError
+from services.db import Base
+from sqlalchemy.orm import relationship
+from sqlalchemy import Column, Integer, String, DateTime, ForeignKey, Text
 
-class Consulta():
+class Consulta(Base):
+
+    __tablename__='consultas'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    fecha = Column(DateTime, default=datetime.now)
+    motivo = Column(String(255), nullable=False)
+    diagnostico = Column(Text)
+
+    mascota_id = Column(Integer, ForeignKey('mascotas.id'), nullable=False)
+    mascota = relationship("Mascota", back_populates="consultas")
+
+
     def __init__(self, fecha='', motivo='', diagnostico='', mascota=''):
         """
         1. El constructor recibe la fecha, el motivo, el diagnóstico y la mascota relacionada.
@@ -19,6 +32,7 @@ class Consulta():
         5. Deja registro en el log de que la consulta fue registrada exitosamente.
         """
         #2
+        super().__init__()
         self.fecha = self._validar_fecha(fecha)
         #3
         self.motivo = self._validar_cadena(motivo, "motivo")
@@ -59,11 +73,3 @@ class Consulta():
         """
         return f"Fecha: {self.fecha}, Motivo: {self.motivo}, Diagnóstico: {self.diagnostico}"
 
-    def to_dict(self):
-        
-        return {
-            'fecha': self.fecha.strftime("%d/%m/%Y"),
-            'motivo': self.motivo,
-            'diagnostico': self.diagnostico,
-            'mascota': self.mascota.nombre  
-        }
