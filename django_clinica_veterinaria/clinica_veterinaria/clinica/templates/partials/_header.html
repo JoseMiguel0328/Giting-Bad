@@ -1,0 +1,13 @@
+{% load static %}
+<nav>
+    <div class="nav_container">
+        <ul>
+            <li><a href="{% url 'landing' %}">Inicio</a></li>
+            <li><a href="{% url 'services' %}">Servicios</a></li>
+            <li><a href="#">Mascotas</a></li>
+            <li><a href="#">Dueños</a></li>
+            <li><a href="#">Citas</a></li>
+        </ul>
+        <img class="nav_logo" src="{% static 'img/logo.png' %}" alt="">
+    </div>
+</nav>

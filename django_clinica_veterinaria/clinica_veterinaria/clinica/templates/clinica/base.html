@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigos Peludos</title>
+
+    <meta name="Descripción" content="Clinica Veterinaria">
+    <meta name="Autor" content="Clinica veterinaria con pasión por la tecnología!">
+
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/logo.png' %}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'css/_header.css' %}">
+
+</head>
+<body>
+
+    {% include 'partials/_header.html' %}
+
+    <main>{% block content %} {% endblock %}</main>
+    
+    {% include 'partials/_footer.html' %}
+</body>
+</html>
