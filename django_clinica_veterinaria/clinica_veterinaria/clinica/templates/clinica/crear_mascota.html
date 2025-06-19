@@ -1,0 +1,15 @@
+{% extends 'clinica/base.html' %}
+{% block content %} 
+
+<h2>Registrar Mascota</h2>
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Registrar</button>
+</form>
+
+<a href="{% url 'listar_mascotas' %}">Volver al listado</a>
+
+
+{% endblock %}

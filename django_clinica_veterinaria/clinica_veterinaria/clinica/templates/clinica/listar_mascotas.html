@@ -1,0 +1,22 @@
+{% extends 'clinica/base.html' %}
+{% block content %} 
+
+<h2>Listado de Mascotas</h2>
+
+{% if mascotas %}
+    <ul>
+        {% for mascota in mascotas %}
+            <li>
+                <strong>{{ mascota.nombre }}</strong> - {{ mascota.especie }} - {{ mascota.raza }} - {{ mascota.edad }} años
+                <br>
+                Dueño: {{ mascota.dueno.nombre }} ({{ mascota.dueno.documento }})
+            </li>
+        {% endfor %}
+    </ul>
+
+    <p>Total de mascotas: {{ mascotas|length }}</p>
+{% else %}
+    <p>No hay mascotas registradas.</p>
+{% endif %}
+<button><a href="{% url 'crear_mascota' %}">Resgistrar Nueva mascota</a></button>
+{% endblock %}
