@@ -1,0 +1,47 @@
+{% extends 'clinica/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static '/css/mascota.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="mascotas-container">
+    <h1>Gestión de Mascotas</h1>
+
+    <table class="tabla-mascotas">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Especie</th>
+                <th>Raza</th>
+                <th>Edad</th>
+                <th>Dueño</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for mascota in mascotas %}
+                <tr>
+                    <td>{{ mascota.nombre }}</td>
+                    <td>{{ mascota.especie }}</td>
+                    <td>{{ mascota.raza }}</td>
+                    <td>{{ mascota.edad }}</td>
+                    <td>{{ mascota.dueno.nombre }}</td>
+                    <td>
+                        <a href="{% url 'editar_mascota' mascota.id %}" class="btn editar">Editar</a>
+                        <a href="{% url 'eliminar_mascota' mascota.id %}" class="btn eliminar" onclick="return confirm('¿Estás seguro de eliminar esta mascota?')">Eliminar</a>
+                    </td>
+                </tr>
+            {% empty %}
+                <tr><td colspan="6">No hay mascotas registradas.</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="acciones">
+        <a href="{% url 'crear_mascota' %}" class="btn crear">Registrar Nueva Mascota</a>
+    </div>
+
+</div>
+{% endblock %}

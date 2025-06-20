@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom right, #93C572, #C8EBB1);
+    margin: 0;
+    padding: 0;
+}
+
+.servicios-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.servicios-container h1 {
+    text-align: center;
+    color: #2f2f2f;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.servicio {
+    background-color: #f6f6f6;
+    border-radius: 15px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 0 0 transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 1rem;
+}
+
+.servicio h3 {
+    margin: 0.5rem 0;
+    color: #494234;
+    font-size: 1.3rem;
+}
+
+.servicio p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.5rem;
+    max-width: 220px;
+}
+
+.servicio:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}

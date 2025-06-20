@@ -1,0 +1,20 @@
+{% extends 'clinica/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/duenos.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="form-container">
+    <h2>Registrar Nuevo Dueño</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="form-actions">
+            <button type="submit">Guardar</button>
+            <a href="{% url 'gestionar_duenos' %}" class="btn-volver">Volver</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

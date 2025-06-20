@@ -1,7 +1,7 @@
 from django import forms
-from ..models import Dueno
+from clinica.models import Dueno
 
 class DuenoForm(forms.ModelForm):
-        class Meta:
-            model = Dueno
-            fields = '__all__'
+    class Meta:
+        model = Dueno
+        fields = ['nombre', 'documento', 'telefono', 'direccion']

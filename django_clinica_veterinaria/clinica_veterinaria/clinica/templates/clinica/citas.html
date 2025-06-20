@@ -1,0 +1,44 @@
+{% extends 'clinica/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/citas.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="citas-container">
+    <h1>Gestión de Citas</h1>
+
+    <table class="tabla-citas">
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Motivo</th>
+                <th>Diagnóstico</th>
+                <th>Mascota</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for cita in citas %}
+                <tr>
+                    <td>{{ cita.fecha }}</td>
+                    <td>{{ cita.motivo }}</td>
+                    <td>{{ cita.diagnostico }}</td>
+                    <td>{{ cita.mascota.nombre }}</td>
+                    <td>
+                        <a href="{% url 'editar_cita' cita.id %}" class="btn editar">Editar</a>
+                        <a href="{% url 'eliminar_cita' cita.id %}" class="btn eliminar" onclick="return confirm('¿Eliminar esta cita?')">Eliminar</a>
+                    </td>
+                </tr>
+            {% empty %}
+                <tr><td colspan="5">No hay citas registradas.</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="acciones">
+        <a href="{% url 'crear_cita' %}" class="btn crear">Registrar Nueva Cita</a>
+    </div>
+</div>
+{% endblock %}

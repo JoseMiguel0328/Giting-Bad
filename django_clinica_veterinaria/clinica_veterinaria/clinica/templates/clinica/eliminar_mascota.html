@@ -1,0 +1,17 @@
+{% extends 'clinica/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/mascota.css' %}">
+{% endblock %}
+
+{% block content %}
+  <div class="mascotas-container">
+    <h2>¿Estás seguro de que deseas eliminar la mascota "{{ mascota.nombre }}"?</h2>
+    <form method="post">
+      {% csrf_token %}
+      <button type="submit" class="btn eliminar">Sí, eliminar</button>
+      <a href="{% url 'gestionar_mascotas' %}" class="btn volver">Cancelar</a>
+    </form>
+  </div>
+{% endblock %}

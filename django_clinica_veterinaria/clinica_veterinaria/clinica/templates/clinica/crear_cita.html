@@ -1,0 +1,21 @@
+{% extends 'clinica/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/citas.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="formulario-cita">
+    <h2>Registrar Nueva Cita</h2>
+    
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="form-botones">
+            <button type="submit" class="btn guardar">Guardar</button>
+            <a href="{% url 'gestionar_citas' %}" class="btn volver">Volver</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

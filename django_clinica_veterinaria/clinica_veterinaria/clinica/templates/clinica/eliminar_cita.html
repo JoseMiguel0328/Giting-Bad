@@ -1,0 +1,19 @@
+{% extends 'clinica/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/mascota.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="mascotas-container">
+  <h2>Confirmar eliminación</h2>
+  <p>¿Estás seguro de que deseas eliminar esta cita con fecha <strong>{{ consulta.fecha }}</strong>?</p>
+
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn eliminar">Eliminar</button>
+    <a href="{% url 'gestionar_citas' %}" class="btn crear" style="margin-left: 10px;">Cancelar</a>
+  </form>
+</div>
+{% endblock %}

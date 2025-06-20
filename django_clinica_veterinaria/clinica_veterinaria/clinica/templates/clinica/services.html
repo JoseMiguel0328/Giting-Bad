@@ -1,7 +1,30 @@
 {% extends 'clinica/base.html' %}
-{% block content %} 
+{% load static %}
 
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/service.css' %}">
+{% endblock %}
 
-
-
+{% block content %}
+<section class="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="servicios-container">
+        <div class="servicio-box">
+            <h3>Consulta Médica</h3>
+            <p>Diagnóstico y tratamiento profesional para tu mascota.</p>
+        </div>
+        <div class="servicio-box">
+            <h3>Vacunación</h3>
+            <p>Protección garantizada con vacunas certificadas.</p>
+        </div>
+        <div class="servicio-box">
+            <h3>Estética y Baño</h3>
+            <p>Higiene, belleza y confort para tus peludos.</p>
+        </div>
+        <div class="servicio-box">
+            <h3>Cirugía</h3>
+            <p>Procedimientos seguros con tecnología de punta.</p>
+        </div>
+    </div>
+</section>
 {% endblock %}

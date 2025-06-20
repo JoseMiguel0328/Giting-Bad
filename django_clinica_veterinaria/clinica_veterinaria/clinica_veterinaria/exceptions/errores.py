@@ -11,18 +11,17 @@ class BaseError(Exception):
     Excepción base para todas las excepciones personalizadas de la aplicación.
     """
     def __init__(self, message="Error en la aplicación veterinaria"):
-        self.message = message
-        super().__init__(self.message)
+        super().__init__(message)
 
 
-class DatoInvalidoError(ValidationError, BaseError):
+class DatoInvalidoError(ValidationError):
     """
     Excepción para datos inválidos en los modelos.
     Hereda de ValidationError para compatibilidad con Django.
     """
     def __init__(self, message="Dato inválido proporcionado"):
-        BaseError.__init__(self, message)
-        ValidationError.__init__(self, message)
+        super().__init__(message)
+    pass
 
 class TelefonoInvalidoError(BaseError):
     def __init__(self, mensaje="Debe ingresar un teléfono permitido."):

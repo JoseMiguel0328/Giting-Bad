@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom right, #93C572, #C8EBB1);
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.citas-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Título */
+.citas-container h1 {
+    text-align: center;
+    color: #2f2f2f;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Tabla */
+.tabla-citas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.tabla-citas th,
+.tabla-citas td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.95rem;
+}
+
+.tabla-citas th {
+    background-color: #93C572;
+    color: white;
+    font-weight: 600;
+}
+
+.tabla-citas tr:hover {
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+/* Botones */
+.btn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn.editar {
+    background-color: #0772ff;
+    color: white;
+}
+
+.btn.eliminar {
+    background-color: #DC3545;
+    color: white;
+}
+
+.btn.crear {
+    background-color: #28A745;
+    color: white;
+}
+
+/* Sección de acciones */
+.acciones {
+    text-align: right;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .citas-container {
+        padding: 20px;
+    }
+
+    .tabla-citas th, .tabla-citas td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 8px 14px;
+        font-size: 0.9rem;
+    }
+
+    .acciones {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+/* ===== Estilos para el formulario de crear cita ===== */
+form {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 2rem auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form p {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #2f4f4f;
+}
+
+form input,
+form select,
+form textarea {
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #93C572;
+}
+
+button[type="submit"] {
+    background-color: #93C572;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #7ca84f;
+}
+
+/* Botón de volver */
+a.volver {
+    display: inline-block;
+    margin-top: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    background-color: #e0e0e0;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+a.volver:hover {
+    color: #000;
+    background-color: #d5d5d5;
+    transform: scale(1.05);
+}
