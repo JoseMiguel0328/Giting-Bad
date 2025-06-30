@@ -1,0 +1,60 @@
+{% extends 'clinica/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/medicamentos.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="background-curve"></div>
+
+<div class="medicamentos-container">
+    <h1>Gestión de Medicamentos</h1>
+
+    <input type="text" id="buscador-medicamentos" placeholder="Buscar medicamento..." style="margin-bottom:20px; padding:8px; width:100%; border-radius:8px; border:1px solid #ccc;">
+
+    <table class="tabla-medicamentos">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Cantidad Disponible</th>
+                <th>Fecha de Vencimiento</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-medicamentos-body">
+            {% for medicamento in medicamentos %}
+                <tr class="{% if medicamento.esta_vencido %}vencido{% elif medicamento.esta_bajo_stock %}bajo-stock{% endif %}">
+                    <td>{{ medicamento.nombre }}</td>
+                    <td>{{ medicamento.descripcion }}</td>
+                    <td>{{ medicamento.cantidad_disponible }}</td>
+                    <td>{{ medicamento.fecha_vencimiento }}</td>
+                    <td>
+                        <a href="{% url 'editar_medicamento' medicamento.id %}" class="btn editar">Editar</a>
+                        <a href="{% url 'eliminar_medicamento' medicamento.id %}" class="btn eliminar">Eliminar</a>
+                    </td>
+                </tr>
+            {% empty %}
+                <tr><td colspan="5">No hay medicamentos registrados.</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="acciones">
+        <a href="{% url 'crear_medicamento' %}" class="btn crear">Registrar Nuevo Medicamento</a>
+    </div>
+</div>
+
+<script>
+const buscador = document.getElementById('buscador-medicamentos');
+buscador.addEventListener('keyup', function() {
+    const filtro = buscador.value.toLowerCase();
+    const filas = document.querySelectorAll('#tabla-medicamentos-body tr');
+    filas.forEach(fila => {
+        const texto = fila.textContent.toLowerCase();
+        fila.style.display = texto.includes(filtro) ? '' : 'none';
+    });
+});
+</script>
+{% endblock %}

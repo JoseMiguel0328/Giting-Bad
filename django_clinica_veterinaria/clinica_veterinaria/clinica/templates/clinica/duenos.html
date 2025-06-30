@@ -6,8 +6,12 @@
 {% endblock %}
 
 {% block content %}
+<div class="background-curve"></div>
+
 <div class="duenos-container">
     <h1>Gestión de Dueños</h1>
+
+    <input type="text" id="buscador-duenos" placeholder="Buscar dueño..." style="margin-bottom:20px; padding:8px; width:100%; border-radius:8px; border:1px solid #ccc;">
 
     <table class="tabla-duenos">
         <thead>
@@ -19,7 +23,7 @@
                 <th>Opciones</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="tabla-duenos-body">
             {% for dueno in duenos %}
                 <tr>
                     <td>{{ dueno.nombre }}</td>
@@ -28,7 +32,7 @@
                     <td>{{ dueno.direccion }}</td>
                     <td>
                         <a href="{% url 'editar_dueno' dueno.id %}" class="btn editar">Editar</a>
-                        <a href="{% url 'eliminar_dueno' dueno.id %}" class="btn eliminar" onclick="return confirm('¿Estás seguro de eliminar este dueño?')">Eliminar</a>
+                        <a href="{% url 'eliminar_dueno' dueno.id %}" class="btn eliminar">Eliminar</a>
                     </td>
                 </tr>
             {% empty %}
@@ -41,4 +45,16 @@
         <a href="{% url 'crear_dueno' %}" class="btn crear">Registrar Nuevo Dueño</a>
     </div>
 </div>
+
+<script>
+const buscador = document.getElementById('buscador-duenos');
+buscador.addEventListener('keyup', function() {
+    const filtro = buscador.value.toLowerCase();
+    const filas = document.querySelectorAll('#tabla-duenos-body tr');
+    filas.forEach(fila => {
+        const texto = fila.textContent.toLowerCase();
+        fila.style.display = texto.includes(filtro) ? '' : 'none';
+    });
+});
+</script>
 {% endblock %}

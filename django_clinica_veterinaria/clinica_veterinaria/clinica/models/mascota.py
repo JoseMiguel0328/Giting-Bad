@@ -5,6 +5,7 @@ from .dueno import Dueno
 
 logger = get_logger('veterinaria')
 error_logger = get_logger('veterinaria.errores')
+acciones_logger = get_logger('clinica.acciones')
 
 class Mascota(models.Model):
     nombre = models.CharField(max_length=100)
@@ -93,12 +94,18 @@ class Mascota(models.Model):
             logger.info(
                 f"Mascota {accion} exitosamente - ID: {self.id}"
             )
+            accion = "registrada" if es_nueva else "editada"
+            acciones_logger.info(f"Mascota {accion} - ID: {self.id}, Nombre: {self.nombre}")
 
         except Exception as e:
             error_logger.error(
                 f"Error al guardar mascota: {str(e)}"
             )
             raise
+
+    def delete(self, *args, **kwargs):
+        acciones_logger.info(f"Mascota eliminada - ID: {self.id}, Nombre: {self.nombre}")
+        super().delete(*args, **kwargs)
 
     def __str__(self):
         return f"{self.nombre} ({self.especie}, {self.raza}, {self.edad} años) \n  Dueño: {self.dueno.nombre} Tel: {self.dueno.telefono}, Dir: {self.dueno.direccion}, CC:{self.dueno.documento}"

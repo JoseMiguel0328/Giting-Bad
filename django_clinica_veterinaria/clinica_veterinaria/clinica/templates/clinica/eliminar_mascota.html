@@ -6,12 +6,16 @@
 {% endblock %}
 
 {% block content %}
-  <div class="mascotas-container">
-    <h2>¿Estás seguro de que deseas eliminar la mascota "{{ mascota.nombre }}"?</h2>
+  <div class="background-curve"></div>
+
+  <div class="formulario-mascota-container">
     <form method="post">
+      <h2>¿Estás seguro de que deseas eliminar la mascota "{{ mascota.nombre }}"?</h2>
       {% csrf_token %}
-      <button type="submit" class="btn eliminar">Sí, eliminar</button>
-      <a href="{% url 'gestionar_mascotas' %}" class="btn volver">Cancelar</a>
+      <div class="botones-formulario">
+        <button type="submit" class="btn eliminar">Sí, eliminar</button>
+        <a href="{% url 'gestionar_mascotas' %}" class="btn volver">Cancelar</a>
+      </div>
     </form>
   </div>
 {% endblock %}

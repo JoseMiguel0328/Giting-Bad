@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #93C572;
+    color: #494234;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.background-curve {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+    background: #93C572;
+}
+
+.background-curve::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #C8EBB1;
+    clip-path: ellipse(40% 100% at 100% 50%);
+    z-index: 0;
+}
+
+.cirugias-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.6s ease-in-out;
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cirugias-container h1,
+.cirugias-container h2 {
+    text-align: center;
+    color: #2f2f2f;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.tabla-cirugias {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.tabla-cirugias th,
+.tabla-cirugias td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.95rem;
+}
+
+.tabla-cirugias th {
+    background-color: #93C572;
+    color: white;
+    font-weight: 600;
+}
+
+.tabla-cirugias tr:hover {
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.btn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn.editar {
+    background-color: #0772ff;
+    color: white;
+}
+
+.btn.eliminar {
+    background-color: #DC3545;
+    color: white;
+}
+
+.btn.crear {
+    background-color: #28A745;
+    color: white;
+}
+
+.btn.volver {
+    background-color: #6c757d;
+    color: white;
+}
+
+.acciones {
+    text-align: right;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 2rem auto;
+    position: relative;
+    z-index: 2;
+}
+
+form p {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #2f4f4f;
+}
+
+form input,
+form select,
+form textarea {
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #93C572;
+}
+
+button[type="submit"] {
+    background-color: #93C572;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #7ca84f;
+}
+
+a.volver {
+    display: inline-block;
+    margin-top: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    background-color: #e0e0e0;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+a.volver:hover {
+    color: #000;
+    background-color: #d5d5d5;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .cirugias-container {
+        padding: 20px;
+    }
+
+    .tabla-cirugias th, .tabla-cirugias td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 8px 14px;
+        font-size: 0.9rem;
+    }
+
+    .acciones {
+        text-align: center;
+        margin-top: 20px;
+    }
+}

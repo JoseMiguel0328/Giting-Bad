@@ -1,0 +1,68 @@
+{% extends 'clinica/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/cirugia.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="background-curve"></div>
+
+<div class="cirugias-container">
+    <h1>Gestión de Cirugías</h1>
+
+    <input type="text" id="buscador-cirugias" placeholder="Buscar cirugía..." style="margin-bottom:20px; padding:8px; width:100%; border-radius:8px; border:1px solid #ccc;">
+
+    <table class="tabla-cirugias">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Fecha</th>
+                <th>Mascota</th>
+                <th>Veterinario</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-cirugias-body">
+            {% for cirugia in cirugias %}
+                <tr>
+                    <td>{{ cirugia.nombre }}</td>
+                    <td>{{ cirugia.descripcion }}</td>
+                    <td>{{ cirugia.fecha }}</td>
+                    <td>{{ cirugia.mascota.nombre }}</td>
+                    <td>
+                        {% if cirugia.veterinario %}
+                            {{ cirugia.veterinario.nombre }}
+                        {% else %}
+                            No asignado
+                        {% endif %}
+                    </td>
+                    <td>
+                        <a href="{% url 'editar_cirugia' cirugia.id %}" class="btn editar">Editar</a>
+                        <a href="{% url 'eliminar_cirugia' cirugia.id %}" class="btn eliminar">Eliminar</a>
+                    </td>
+                </tr>
+            {% empty %}
+                <tr><td colspan="6">No hay cirugías registradas.</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="acciones">
+        <a href="{% url 'crear_cirugia' %}" class="btn crear">Registrar Nueva Cirugía</a>
+    </div>
+</div>
+
+<script>
+const buscador = document.getElementById('buscador-cirugias');
+buscador.addEventListener('keyup', function() {
+    const filtro = buscador.value.toLowerCase();
+    const filas = document.querySelectorAll('#tabla-cirugias-body tr');
+    filas.forEach(fila => {
+        const texto = fila.textContent.toLowerCase();
+        fila.style.display = texto.includes(filtro) ? '' : 'none';
+    });
+});
+</script>
+{% endblock %}

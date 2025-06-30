@@ -1,24 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(to bottom right, #93C572, #C8EBB1);
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* Contenedor principal */
-.duenos-container {
+body {
+    background: #93C572;
+    color: #494234;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.background-curve {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+    background: #93C572;
+}
+
+.background-curve::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #C8EBB1;
+    clip-path: ellipse(40% 100% at 100% 50%);
+    z-index: 0;
+}
+
+.duenos-container,
+.form-container {
     max-width: 1000px;
     margin: 50px auto;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     animation: fadeIn 0.6s ease-in-out;
+    position: relative;
+    z-index: 2;
 }
 
-/* Animación de entrada */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -30,19 +65,19 @@ body {
     }
 }
 
-/* Título */
-.duenos-container h1 {
+.duenos-container h1,
+.form-container h2 {
     text-align: center;
     color: #2f2f2f;
     font-size: 2.5rem;
     margin-bottom: 30px;
 }
 
-/* Tabla */
 .tabla-duenos {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 30px;
+    overflow-x: auto;
 }
 
 .tabla-duenos th,
@@ -62,154 +97,6 @@ body {
 .tabla-duenos tr:hover {
     background-color: #f9f9f9;
     transition: background-color 0.3s ease;
-}
-
-/* Botones */
-.btn {
-    padding: 10px 18px;
-    border: none;
-    border-radius: 12px;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-.btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.btn.editar {
-    background-color: #FFC107;
-    color: white;
-}
-
-.btn.eliminar {
-    background-color: #DC3545;
-    color: white;
-}
-
-.btn.crear {
-    background-color: #28A745;
-    color: white;
-}
-
-/* Acciones */
-.acciones {
-    text-align: right;
-    margin-top: 20px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .duenos-container {
-        padding: 20px;
-    }
-
-    .tabla-duenos th, .tabla-duenos td {
-        padding: 10px;
-        font-size: 0.9rem;
-    }
-
-    .btn {
-        padding: 8px 14px;
-        font-size: 0.9rem;
-    }
-
-    .acciones {
-        text-align: center;
-        margin-top: 20px;
-    }
-}
-
-/* === Formulario de crear/editar dueño === */
-.form-container {
-    background: #ffffff;
-    padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 3rem auto;
-}
-
-.form-container h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: #2f2f2f;
-}
-
-form p {
-    margin-bottom: 1.2rem;
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    font-weight: 600;
-    margin-bottom: 0.4rem;
-    color: #2f4f4f;
-}
-
-form input,
-form select,
-form textarea {
-    padding: 0.6rem 1rem;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-    transition: border 0.3s ease;
-}
-
-form input:focus,
-form select:focus,
-form textarea:focus {
-    outline: none;
-    border-color: #93C572;
-}
-
-.form-actions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
-}
-
-button[type="submit"] {
-    background-color: #93C572;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-button[type="submit"]:hover {
-    background-color: #7ca84f;
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Botón volver */
-.btn-volver {
-    background-color: transparent;
-    border: 2px solid #93C572;
-    padding: 0.7rem 1.3rem;
-    border-radius: 10px;
-    color: #555;
-    font-weight: 500;
-    text-decoration: none;
-    transition: 0.3s ease;
-}
-
-.btn-volver:hover {
-    background-color: #93C572;
-    color: white;
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .btn {
@@ -243,7 +130,92 @@ button[type="submit"]:hover {
     color: white;
 }
 
-/* Acciones al final de la tabla */
 .acciones {
     text-align: right;
+    margin-top: 20px;
+}
+
+form p {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #2f4f4f;
+}
+
+form input,
+form select,
+form textarea {
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #93C572;
+}
+
+button[type="submit"] {
+    background-color: #93C572;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #7ca84f;
+}
+
+.btn-volver {
+    background-color: transparent;
+    border: 2px solid #93C572;
+    padding: 0.7rem 1.3rem;
+    border-radius: 10px;
+    color: #555;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-volver:hover {
+    background-color: #93C572;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .duenos-container,
+    .form-container {
+        padding: 20px;
+    }
+
+    .tabla-duenos th,
+    .tabla-duenos td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 8px 14px;
+        font-size: 0.9rem;
+    }
+
+    .acciones {
+        text-align: center;
+        margin-top: 20px;
+    }
 }

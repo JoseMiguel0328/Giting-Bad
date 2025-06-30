@@ -1,0 +1,32 @@
+{% extends 'clinica/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/bitacora.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="background-curve"></div>
+<div class="bitacora-container">
+    <h2>Detalle de Bitácora de Consulta</h2>
+    <ul class="bitacora-lista">
+        <li><strong>Mascota:</strong> {{ bitacora.mascota.nombre }}</li>
+        <li><strong>Dueño:</strong> {{ bitacora.dueno.nombre }} ({{ bitacora.dueno.telefono }})</li>
+        <li><strong>Veterinario:</strong> {{ bitacora.veterinario.nombre }}</li>
+        <li><strong>Fecha:</strong> {{ bitacora.consulta.fecha }}</li>
+        <li><strong>Motivo:</strong> {{ bitacora.consulta.motivo }}</li>
+        <li><strong>Diagnóstico:</strong> {{ bitacora.diagnostico }}</li>
+        <li><strong>Tratamiento:</strong> {{ bitacora.tratamiento }}</li>
+        <li><strong>Medicamentos:</strong>
+            <ul>
+                {% for med in bitacora.medicamentos.all %}
+                    <li>{{ med.nombre }}</li>
+                {% empty %}
+                    <li>No hay medicamentos registrados.</li>
+                {% endfor %}
+            </ul>
+        </li>
+        <li><strong>Observaciones:</strong> {{ bitacora.observaciones }}</li>
+    </ul>
+</div>
+{% endblock %}

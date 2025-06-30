@@ -1,0 +1,20 @@
+{% extends 'clinica/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/veterinario.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="background-curve"></div>
+
+<div class="veterinarios-container">
+  <h2>¿Estás seguro de que deseas eliminar al veterinario "{{ veterinario.nombre }}"?</h2>
+  
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn eliminar">Sí, eliminar</button>
+    <a href="{% url 'gestionar_veterinarios' %}" class="btn crear">Cancelar</a>
+  </form>
+</div>
+{% endblock %}

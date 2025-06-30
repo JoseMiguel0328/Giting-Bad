@@ -1,0 +1,23 @@
+{% extends 'clinica/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/medicamentos.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="background-curve"></div>
+
+  <div class="medicamentos-container">
+    <h2>Editar Medicamento</h2>
+
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <div class="form-actions">
+        <button type="submit" class="btn guardar">Guardar Cambios</button>
+        <a href="{% url 'gestionar_medicamentos' %}" class="btn volver">Volver</a>
+      </div>
+    </form>
+  </div>
+{% endblock %}

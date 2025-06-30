@@ -22,8 +22,12 @@
                 <li><a href="{% url 'landing' %}">Inicio</a></li>
                 <li><a href="{% url 'services' %}">Servicios</a></li>
                 <li><a href="{% url 'gestionar_mascotas' %}">Mascotas</a></li>
-                <li><a href="#">Dueños</a></li>
-                <li><a href="#">Citas</a></li>
+                <li><a href="{% url 'gestionar_duenos' %}">Dueños</a></li>
+                <li><a href="{% url 'gestionar_veterinarios' %}">Veterinarios</a></li>
+                <li><a href="{% url 'gestionar_citas' %}">Citas</a></li>
+                <li><a href="{% url 'gestionar_medicamentos' %}">Medicamentos</a></li>
+                <li><a href="{% url 'gestionar_cirugias' %}">Cirugia</a></li>
+        </ul>
             </ul>
             <img src="{% static 'img/logo.png' %}" alt="">
         </nav>
@@ -42,7 +46,10 @@
             <div class="main-text">
                 <h1>Amigos Peludos</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.adipisicing elit.</p>
-                <button href="{% url 'services' %}">¡Conoce más!</button>
+                <div class="botones-acciones">
+                    <a href="{% url 'services' %}" class="boton-redondo">¡Conoce más!</a>
+                    <a href="{% url 'exportar_todo' %}" class="boton-redondo">📦 Exportar Datos</a>
+                </div>
             </div>
         </div>
 

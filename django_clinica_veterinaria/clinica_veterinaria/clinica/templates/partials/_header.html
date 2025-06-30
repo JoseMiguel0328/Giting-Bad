@@ -6,8 +6,13 @@
             <li><a href="{% url 'services' %}">Servicios</a></li>
             <li><a href="{% url 'gestionar_mascotas' %}">Mascotas</a></li>
             <li><a href="{% url 'gestionar_duenos' %}">Dueños</a></li>
+            <li><a href="{% url 'gestionar_veterinarios' %}">Veterinarios</a></li>
             <li><a href="{% url 'gestionar_citas' %}">Citas</a></li>
+            <li><a href="{% url 'gestionar_medicamentos' %}">Medicamentos</a></li>
+            <li><a href="{% url 'gestionar_cirugias' %}">Cirugia</a></li>
         </ul>
-        <img class="nav_logo" src="{% static 'img/logo.png' %}" alt="">
+        <a href="{% url 'landing' %}">
+            <img class="nav_logo" src="{% static 'img/logo.png' %}" alt="Logo">
+        </a>
     </div>
-</nav>
+</nav>  

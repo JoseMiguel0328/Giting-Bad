@@ -2,12 +2,16 @@
 {% load static %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static '/css/mascota.css' %}">
+<link rel="stylesheet" href="{% static 'css/mascota.css' %}">
 {% endblock %}
 
 {% block content %}
+<div class="background-curve"></div>
+
 <div class="mascotas-container">
     <h1>Gestión de Mascotas</h1>
+
+    <input type="text" id="buscador-mascotas" placeholder="Buscar mascota..." style="margin-bottom:20px; padding:8px; width:100%; border-radius:8px; border:1px solid #ccc;">
 
     <table class="tabla-mascotas">
         <thead>
@@ -20,7 +24,7 @@
                 <th>Opciones</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="tabla-mascotas-body">
             {% for mascota in mascotas %}
                 <tr>
                     <td>{{ mascota.nombre }}</td>
@@ -30,7 +34,8 @@
                     <td>{{ mascota.dueno.nombre }}</td>
                     <td>
                         <a href="{% url 'editar_mascota' mascota.id %}" class="btn editar">Editar</a>
-                        <a href="{% url 'eliminar_mascota' mascota.id %}" class="btn eliminar" onclick="return confirm('¿Estás seguro de eliminar esta mascota?')">Eliminar</a>
+                        <a href="{% url 'eliminar_mascota' mascota.id %}" class="btn eliminar">Eliminar</a>
+                        <a href="{% url 'exportar_historial_medico_pdf' mascota.id %}" class="btn crear">Descargar Historial PDF</a>
                     </td>
                 </tr>
             {% empty %}
@@ -42,6 +47,17 @@
     <div class="acciones">
         <a href="{% url 'crear_mascota' %}" class="btn crear">Registrar Nueva Mascota</a>
     </div>
-
 </div>
+
+<script>
+const buscador = document.getElementById('buscador-mascotas');
+buscador.addEventListener('keyup', function() {
+    const filtro = buscador.value.toLowerCase();
+    const filas = document.querySelectorAll('#tabla-mascotas-body tr');
+    filas.forEach(fila => {
+        const texto = fila.textContent.toLowerCase();
+        fila.style.display = texto.includes(filtro) ? '' : 'none';
+    });
+});
+</script>
 {% endblock %}

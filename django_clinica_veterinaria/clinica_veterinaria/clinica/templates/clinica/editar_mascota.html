@@ -6,11 +6,17 @@
 {% endblock %}
 
 {% block content %}
-  <h2>Editar Mascota</h2>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Guardar Cambios</button>
-  </form>
-  <a href="{% url 'gestionar_mascotas' %}">Volver</a>
+  <div class="background-curve"></div>
+
+  <div class="formulario-mascota-container">
+    <form method="post">
+      <h2>Editar Mascota</h2>
+      {% csrf_token %}
+      {{ form.as_p }}
+      <div class="botones-formulario">
+        <button type="submit" class="btn guardar">Guardar Cambios</button>
+        <a href="{% url 'gestionar_mascotas' %}" class="btn volver">Volver</a>
+      </div>
+    </form>
+  </div>
 {% endblock %}

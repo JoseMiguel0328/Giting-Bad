@@ -2,17 +2,21 @@
 {% load static %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/mascota.css' %}">
+<link rel="stylesheet" href="{% static 'css/citas.css' %}">
 {% endblock %}
 
 {% block content %}
-<div class="mascotas-container">
+<div class="background-curve"></div>
+
+<div class="citas-container">
   <h2>Editar Cita</h2>
   <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit" class="btn crear">Guardar</button>
-    <a href="{% url 'gestionar_citas' %}" class="btn eliminar" style="margin-left: 10px;">Cancelar</a>
+    <div class="form-botones">
+      <button type="submit" class="btn guardar">Guardar</button>
+      <a href="{% url 'gestionar_citas' %}" class="btn volver">Cancelar</a>
+    </div>
   </form>
 </div>
 {% endblock %}

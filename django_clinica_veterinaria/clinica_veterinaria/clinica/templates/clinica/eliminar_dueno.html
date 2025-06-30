@@ -2,25 +2,22 @@
 {% load static %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/mascota.css' %}">
+<link rel="stylesheet" href="{% static 'css/duenos.css' %}">
 {% endblock %}
 
 {% block content %}
-<div class="mascotas-container">
-    {% if tiene_mascotas %}
-        <div style="color: red; font-weight: bold; margin-bottom: 1em;">
-            <h1>No puedes eliminar este dueño porque tiene mascotas asociadas.</h1><br>
-            <p>Elimina primero las mascotas antes de eliminar al dueño.</p>
-        </div>
-        <a href="{% url 'gestionar_duenos' %}" class="btn crear">Volver</a>
-    {% else %}
-        <h1>Confirmar Eliminación</h1>
-        <p>¿Estás seguro de que deseas eliminar al dueño <strong>{{ dueno.nombre }}</strong>?</p>
-        <form method="post">
-            {% csrf_token %}
+<div class="background-curve"></div>
+
+<div class="duenos-container">
+    <h1>Confirmar Eliminación</h1>
+    <p>¿Estás seguro de que deseas eliminar al dueño <strong>{{ dueno.nombre }}</strong>?</p>
+
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-actions">
             <button type="submit" class="btn eliminar">Sí, eliminar</button>
-            <a href="{% url 'gestionar_duenos' %}" class="btn crear">Cancelar</a>
-        </form>
-    {% endif %}
+            <a href="{% url 'gestionar_duenos' %}" class="btn-volver">Cancelar</a>
+        </div>
+    </form>
 </div>
 {% endblock %}

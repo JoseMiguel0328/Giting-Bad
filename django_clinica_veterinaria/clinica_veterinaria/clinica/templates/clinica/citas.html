@@ -6,8 +6,12 @@
 {% endblock %}
 
 {% block content %}
+<div class="background-curve"></div>
+
 <div class="citas-container">
     <h1>Gestión de Citas</h1>
+
+    <input type="text" id="buscador-citas" placeholder="Buscar cita..." style="margin-bottom:20px; padding:8px; width:100%; border-radius:8px; border:1px solid #ccc;">
 
     <table class="tabla-citas">
         <thead>
@@ -19,7 +23,7 @@
                 <th>Opciones</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="tabla-citas-body">
             {% for cita in citas %}
                 <tr>
                     <td>{{ cita.fecha }}</td>
@@ -28,7 +32,12 @@
                     <td>{{ cita.mascota.nombre }}</td>
                     <td>
                         <a href="{% url 'editar_cita' cita.id %}" class="btn editar">Editar</a>
-                        <a href="{% url 'eliminar_cita' cita.id %}" class="btn eliminar" onclick="return confirm('¿Eliminar esta cita?')">Eliminar</a>
+                        <a href="{% url 'eliminar_cita' cita.id %}" class="btn eliminar">Eliminar</a>
+                        {% if cita.bitacora %}
+                            <a href="{% url 'detalle_bitacora_consulta' cita.bitacora.id %}" class="btn ver">Ver Bitácora</a>
+                        {% else %}
+                            <span class="btn disabled">Sin Bitácora</span>
+                        {% endif %}
                     </td>
                 </tr>
             {% empty %}
@@ -41,4 +50,16 @@
         <a href="{% url 'crear_cita' %}" class="btn crear">Registrar Nueva Cita</a>
     </div>
 </div>
+
+<script>
+const buscador = document.getElementById('buscador-citas');
+buscador.addEventListener('keyup', function() {
+    const filtro = buscador.value.toLowerCase();
+    const filas = document.querySelectorAll('#tabla-citas-body tr');
+    filas.forEach(fila => {
+        const texto = fila.textContent.toLowerCase();
+        fila.style.display = texto.includes(filtro) ? '' : 'none';
+    });
+});
+</script>
 {% endblock %}

@@ -11,4 +11,3 @@ Aquí encontrarás todos los ejercicios y retos desarrollados durante los distin
 |---------------------|------------------------------|
 | José Domínguez      | Participante                 |
 | Miguel Arroyave     | Participante                 |
-|                     | Participante                 |

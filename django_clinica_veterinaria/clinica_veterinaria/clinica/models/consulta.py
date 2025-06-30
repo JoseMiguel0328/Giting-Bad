@@ -6,6 +6,7 @@ from .mascota import Mascota
 
 logger = get_logger('veterinaria')
 error_logger = get_logger('veterinaria.errores')
+acciones_logger = get_logger('clinica.acciones')
 
 
 class Consulta(models.Model):
@@ -71,11 +72,12 @@ class Consulta(models.Model):
             super().save(*args, **kwargs)
             
             # Log exitoso
-            accion = "creada" if es_nueva else "actualizada"
+            accion = "registrada" if es_nueva else "editada"
             logger.info(
                 f"Consulta {accion} exitosamente - ID: {self.id}, "
                 f"Mascota: {self.mascota.nombre}, Fecha: {self.fecha}"
             )
+            acciones_logger.info(f"Consulta {accion} - ID: {self.id}, Mascota: {self.mascota.nombre}, Fecha: {self.fecha}")
 
         except Exception as e:
             error_logger.error(
@@ -83,6 +85,10 @@ class Consulta(models.Model):
                 f"Error: {str(e)}"
             )
             raise
+
+    def delete(self, *args, **kwargs):
+        acciones_logger.info(f"Consulta eliminada - ID: {self.id}, Mascota: {self.mascota.nombre}, Fecha: {self.fecha}")
+        super().delete(*args, **kwargs)
 
     def __str__(self):
         return f"Fecha: {self.fecha} \nMotivo: {self.motivo} \nDiagnóstico: {self.diagnostico}"

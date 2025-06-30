@@ -1,0 +1,19 @@
+{% extends 'clinica/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/bitacora.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="background-curve"></div>
+<h2>Bitácora de Consulta</h2>
+<form method="post">
+    {% csrf_token %}
+    <p><strong>Mascota:</strong> {{ mascota.nombre }} ({{ mascota.especie }})</p>
+    <p><strong>Dueño:</strong> {{ dueno.nombre }} - {{ dueno.telefono }}</p>
+    <p><strong>Consulta:</strong> {{ consulta.fecha }} - {{ consulta.motivo }}</p>
+    {{ form.as_p }}
+    <button type="submit" class="btn guardar">Guardar Bitácora</button>
+</form>
+{% endblock %}

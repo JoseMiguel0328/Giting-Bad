@@ -55,6 +55,17 @@ LOGGING_CONFIG = {
             'encoding': 'utf-8',
         },
         
+        # Log de acciones importantes de modelos
+        'acciones_file': {
+            'level': 'INFO',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': LOGS_DIR / 'acciones.log',
+            'maxBytes': 1024*1024*5,  # 5MB
+            'backupCount': 5,
+            'formatter': 'simple',
+            'encoding': 'utf-8',
+        },
+        
         # Consola (para desarrollo)
         'console': {
             'level': 'INFO',
@@ -82,6 +93,13 @@ LOGGING_CONFIG = {
         # Logger general de la aplicación
         'veterinaria': {
             'handlers': ['django_file', 'console'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+        
+        # Logger para acciones importantes de modelos
+        'clinica.acciones': {
+            'handlers': ['acciones_file', 'console'],
             'level': 'INFO',
             'propagate': False,
         },

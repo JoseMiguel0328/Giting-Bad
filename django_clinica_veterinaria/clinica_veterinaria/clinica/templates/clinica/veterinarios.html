@@ -1,0 +1,60 @@
+{% extends 'clinica/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/veterinario.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="background-curve"></div>
+
+  <div class="veterinarios-container">
+    <h1>Gestión de Veterinarios</h1>
+
+    <input type="text" id="buscador-veterinarios" placeholder="Buscar veterinario..." style="margin-bottom:20px; padding:8px; width:100%; border-radius:8px; border:1px solid #ccc;">
+
+    <table class="tabla-veterinarios">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Documento</th>
+          <th>Teléfono</th>
+          <th>Especialidad</th>
+          <th>Opciones</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-veterinarios-body">
+        {% for vet in veterinarios %}
+          <tr>
+            <td>{{ vet.nombre }}</td>
+            <td>{{ vet.documento }}</td>
+            <td>{{ vet.telefono }}</td>
+            <td>{{ vet.especialidad }}</td>
+            <td>
+              <a href="{% url 'editar_veterinario' vet.id %}" class="btn editar">Editar</a>
+              <a href="{% url 'eliminar_veterinario' vet.id %}" class="btn eliminar">Eliminar</a>
+            </td>
+          </tr>
+        {% empty %}
+          <tr><td colspan="5">No hay veterinarios registrados.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <div class="acciones">
+      <a href="{% url 'crear_veterinario' %}" class="btn crear">Registrar Nuevo Veterinario</a>
+    </div>
+  </div>
+
+<script>
+const buscador = document.getElementById('buscador-veterinarios');
+buscador.addEventListener('keyup', function() {
+    const filtro = buscador.value.toLowerCase();
+    const filas = document.querySelectorAll('#tabla-veterinarios-body tr');
+    filas.forEach(fila => {
+        const texto = fila.textContent.toLowerCase();
+        fila.style.display = texto.includes(filtro) ? '' : 'none';
+    });
+});
+</script>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'clinica/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/veterinario.css' %}">
+{% endblock %}
+
+{% block content %}
+  <div class="form-container">
+    <h1>Registrar Veterinario</h1>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Guardar</button>
+    </form>
+    <a href="{% url 'gestionar_veterinarios' %}" class="btn volver">Volver</a>
+  </div>
+{% endblock %}

@@ -1,2 +1,2 @@
-Django>=4.0,<5.0
-sqlalchemy>=2.0
+Django>=5.2
+reportlab>=4.0
