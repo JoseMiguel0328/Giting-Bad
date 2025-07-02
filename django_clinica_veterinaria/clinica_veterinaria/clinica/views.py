@@ -505,7 +505,7 @@ def exportar_historial_medico_pdf(request, mascota_id):
         p.rect(0, height-60, width, 60, fill=1, stroke=0)
         p.setFillColor(blanco)
         p.setFont("Montserrat-Bold", 22)
-        p.drawString(50, height-40, "Clínica Veterinaria Mi Mascota")
+        p.drawString(50, height-40, "Clínica Veterinaria Amigos Peludos")
 
     def dibujar_pie():
         fecha = timezone.now().strftime("%d/%m/%Y %H:%M")
