@@ -38,7 +38,7 @@ Instalación y ejecución
 7. Ejecuta el servidor de desarrollo:
    - `python manage.py runserver`
 8. Accede a la aplicación en tu navegador:
-   - http://127.0.0.1:8000/
+   - http://127.0.0.1:8000/app/landing
 
 --------------------------
 Notas adicionales
